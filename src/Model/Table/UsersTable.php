@@ -33,4 +33,5 @@ class UsersTable extends Table
             ->requirePresence('statut', 'create')->notEmpty('statut', 'Un statut est nécessaire');
         return $validator;
     }
+
 }

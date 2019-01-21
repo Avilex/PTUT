@@ -69,7 +69,7 @@ class AppController extends Controller
         $this->Auth->allow(['display', 'view', 'index']);
 
         //pour la déconnexion
-        $this->Auth->allow(['logout']);
+        $this->Auth->allow(['logout','add']);
 
 
         /*
