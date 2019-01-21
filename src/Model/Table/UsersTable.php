@@ -16,10 +16,7 @@ class UsersTable extends Table
 {
     public function initialize(array $config){
         parent::initialize($config);
-        $this->hasOne('Adherent')
-            ->setName('Adherents')
-            ->setConditions(['Adherents.id' => '1'])
-            ->setDependent(true);
+        $this->hasOne('Adherents');
     }
 
     public function validationDefault(Validator $validator)
@@ -27,6 +24,7 @@ class UsersTable extends Table
         $validator
             ->requirePresence('nom', 'create')-> notEmpty('nom', "Un nom de personne est nécessaire")
             ->requirePresence('prenom', 'create') ->notEmpty('prenom', 'Un prenom est nécessaire')
+            ->requirePresence('password', 'create')->notEmpty('password', 'Un mot de passe est nécessaire')
             ->requirePresence('tel', 'create')->notEmpty('tel', 'Un numéro de téléphone est nécessaire')
             ->requirePresence('mail', 'create')->notEmpty('mail', 'Un mail est nécessaire')
             ->requirePresence('dateNaissance', 'create')->notEmpty('dateNaissance', 'Une date de naissance est nécessaire')

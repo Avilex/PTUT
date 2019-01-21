@@ -11,15 +11,13 @@ namespace App\Controller;
 
 class UsersController extends AppController
 {
-    public function add(){
+    public function add($id = null){
         $user = $this->Users->find();
         if (!empty($this->getRequest()->getData())) {
             $user = $this->Users->newEntity($this->getRequest()->getData());
-            //dd($user);
-            //dd($this->Users->save($user));
             if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['action' => 'affiche']));
+                $this->redirect((['controller'=>'Adherents', 'action' => 'add',$user->id]));
             }
             else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
