@@ -10,11 +10,11 @@ Create table if not exists users(
     adherent_id int,
 	nom varchar(255),
     prenom varchar(255),
+    password varchar(255),
     tel varchar(255),
     mail varchar(255),
-    password varchar(255),
     dateNaissance date,
-    statut int(11),
+    statut int(3),
     primary key(id)
 );
 
