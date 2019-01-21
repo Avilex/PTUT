@@ -19,7 +19,7 @@ class UsersController extends AppController
             //dd($this->Users->save($user));
             if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['action' => 'affiche']));
+                $this->redirect((['action'=>'login']));
             }
             else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
@@ -55,7 +55,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect((['action'=>'affiche']));
             }
             $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
         }
@@ -66,4 +66,5 @@ class UsersController extends AppController
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
+
 }
