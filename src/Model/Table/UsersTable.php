@@ -16,10 +16,7 @@ class UsersTable extends Table
 {
     public function initialize(array $config){
         parent::initialize($config);
-        $this->hasOne('Adherent')
-            ->setName('Adherents')
-            ->setConditions(['Adherents.id' => '1'])
-            ->setDependent(true);
+        $this->hasOne('Adherent');
     }
 
     public function validationDefault(Validator $validator)
