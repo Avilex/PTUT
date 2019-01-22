@@ -19,22 +19,20 @@ class UsersController extends AppController
             $user->statut = $this->convertListe($user->statut);
             if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['action' => 'add']));
-            }
-            else {
+                $this->redirect((['action' => 'affiche']));
+            } else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
             }
         }
         $this->set(compact('user'));
     }
 
-    private function convertListe($statut){
-        switch($statut) {
+    private function convertListe($statut)
+    {
+        switch ($statut) {
             case 0:
-                return 'Adhérent';
-            case 1:
                 return 'Gérant';
-            case 2:
+            case 1:
                 return 'Moniteur';
         }
     }

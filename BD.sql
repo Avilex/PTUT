@@ -12,7 +12,7 @@ Create table if not exists users(
     password varchar(255),
     tel varchar(255),
     mail varchar(255),
-    statut int(3),
+    statut varchar(255),
     primary key(id)
 );
 
@@ -22,7 +22,7 @@ Create table if not exists adherents(
     prenom varchar(255),
 	tel varchar(255),
     mail varchar(255),
-    dateNaissance datetime,
+    dateNaissance date,
     nomTuteur varchar(255),
     adresseTuteur varchar(255),
     telTuteur text,
