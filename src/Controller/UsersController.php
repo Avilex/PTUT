@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: p1701300
- * Date: 19/12/2018
- * Time: 15:09
+ * User: Tanguy
+ * Date: 03/01/2019
+ * Time: 13:29
  */
 
 namespace App\Controller;
@@ -13,19 +13,10 @@ class UsersController extends AppController
 {
     public function add(){
         $user = $this->Users->find();
-        $adherent = $this->Users->Adherents->find();
         if (!empty($this->getRequest()->getData())) {
             $user = $this->Users->newEntity($this->getRequest()->getData());
-            $adherent = $this->Users->Adherents->newEntity($this->getRequest()->getData());
             $user->statut = $this->convertListe($user->statut);
-            if(isset($_POST['tuteur']) == true) {
-                if(empty($_POST['nomTuteur']) || empty($_POST['adresseTuteur']) || empty($_POST['telTuteur']) || empty($_POST['mailTuteur'])){
-                    $this->Flash->error("Vous avez oubliez de remplir les champs pour le tuteur");
-                    $this->redirect((['action' => 'add']));
-                }
-
-            }
-            if ($this->Users->save($user) && ($this->Users->Adherents->save($adherent))) {
+            if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
                 $this->redirect((['action' => 'add']));
             }
@@ -66,23 +57,5 @@ class UsersController extends AppController
         }
         $user = $this->Users->find()->toArray();
         $this->set(compact('user'));
-    }
-
-    public function login()
-    {
-        if ($this->request->is('post')) {
-            $user = $this->Auth->identify();
-            if ($user) {
-                $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
-            }
-            $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
-        }
-    }
-
-    public function logout()
-    {
-        $this->Flash->success('Vous avez été déconnecté.');
-        return $this->redirect($this->Auth->logout());
     }
 }
