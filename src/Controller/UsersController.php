@@ -97,7 +97,6 @@ class UsersController extends AppController
             ->toArray();
         $this->set(compact('user'));
     }
-
 }
 
 //$this->getRequest()->getSession()->read("Auth.User.statut");

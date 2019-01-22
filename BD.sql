@@ -63,5 +63,5 @@ Create table if not exists factures(
 select * from users;
 select * from adherents;
 
- 
+ delete * from users where 'id'=2;
 
