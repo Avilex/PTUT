@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Tanguy
- * Date: 03/01/2019
- * Time: 13:29
+ * User: p1701300
+ * Date: 19/12/2018
+ * Time: 15:09
  */
 
 namespace App\Controller;
@@ -66,5 +66,23 @@ class UsersController extends AppController
         }
         $user = $this->Users->find()->toArray();
         $this->set(compact('user'));
+    }
+
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+        }
+    }
+
+    public function logout()
+    {
+        $this->Flash->success('Vous avez été déconnecté.');
+        return $this->redirect($this->Auth->logout());
     }
 }

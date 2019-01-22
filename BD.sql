@@ -60,8 +60,11 @@ Create table if not exists factures(
    
 select * from users;
 select * from adherents;
+select * from moniteurs;
+select * from gerants;
 
-
+insert into users
+('','','Test','1','0679198222','test1@orange.fr','test123','19/11/1999',1);
  
  
  
