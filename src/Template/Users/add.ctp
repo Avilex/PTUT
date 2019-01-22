@@ -1,15 +1,17 @@
 <?php
 
-echo $this->Form->select('statut', [
-    1 => 'Gérants',
-    2 => 'Moniteurs'
-]);
 
-echo $this->Form->create($user, ['type' => 'file']);//url->
+
+echo $this->Form->create($user);//url->
+echo $this->Form->select('statut', [
+    '0' => 'Gérant',
+    '1' => 'Moniteur'
+]);
 echo $this->Form->control('nom', ['label' => 'Nom de l\'utilisateur']);
 echo $this->Form->control('prenom', ['label' => 'Prénom de l\'utilisateur']);
 echo $this->Form->control('tel', ['label' => 'Téléphone de l\'utilisateur', 'type' => 'tel']);
 echo $this->Form->control('mail', ['label' => 'Mail de l\'utilisateur', 'type' => 'email']);
+echo $this->Form->control('password', ['label' => 'Password de l\'utilisateur']);
 
 echo $this->Form->button('Ajouter');
 echo $this->Form->end();

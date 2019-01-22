@@ -16,7 +16,6 @@ class AdherentsTable extends Table
 {
     public function initialize(array $config){
         parent::initialize($config);
-        $this->belongsTo('Users');
     }
 
     public function validationDefault(Validator $validator)

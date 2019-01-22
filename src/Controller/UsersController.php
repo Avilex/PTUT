@@ -11,34 +11,34 @@ namespace App\Controller;
 
 class UsersController extends AppController
 {
-    public function add(){
+    public function add()
+    {
         $user = $this->Users->find();
         if (!empty($this->getRequest()->getData())) {
             $user = $this->Users->newEntity($this->getRequest()->getData());
             $user->statut = $this->convertListe($user->statut);
             if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['action' => 'add']));
-            }
-            else {
+                $this->redirect((['action' => 'affiche']));
+            } else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
             }
         }
         $this->set(compact('user'));
     }
 
-    private function convertListe($statut){
-        switch($statut) {
+    private function convertListe($statut)
+    {
+        switch ($statut) {
             case 0:
-                return 'Adhérent';
-            case 1:
                 return 'Gérant';
-            case 2:
+            case 1:
                 return 'Moniteur';
         }
     }
 
-    public function affiche(){
+    public function affiche()
+    {
         $conditions = [];
         if ($this->getRequest()->getQuery('nom_user') != NULL) {
             $conditions['nom_user'] = $this->getRequest()->getQuery('nom_user');
