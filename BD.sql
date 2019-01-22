@@ -7,24 +7,25 @@ Drop table if exists factures;
 
 Create table if not exists users(
 	id int auto_increment,
-    adherent_id int,
 	nom varchar(255),
     prenom varchar(255),
     password varchar(255),
     tel varchar(255),
     mail varchar(255),
-    dateNaissance date,
     statut int(3),
     primary key(id)
 );
 
 Create table if not exists adherents(
 	id int auto_increment,
-    user_id int,
-    tuteur boolean,
+    nom varchar(255),
+    prenom varchar(255),
+	tel varchar(255),
+    mail varchar(255),
+    dateNaissance datetime,
     nomTuteur varchar(255),
     adresseTuteur varchar(255),
-    telTuteur varchar(15),
+    telTuteur text,
     mailTuteur varchar(255),
     primary key(id)
 );
@@ -34,6 +35,7 @@ Create table if not exists activites(
     nom varchar(255),
     duree time,
 	date Date,
+    jour varchar(255),
     primary key(id)
 );
 
@@ -60,10 +62,6 @@ Create table if not exists factures(
    
 select * from users;
 select * from adherents;
-select * from moniteurs;
-select * from gerants;
 
- 
- 
  
 

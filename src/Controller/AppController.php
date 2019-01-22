@@ -16,6 +16,8 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
+
 
 /**
  * Application Controller
@@ -45,6 +47,7 @@ class AppController extends Controller
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
+        $this->loadComponent('Csrf');
 
         //pour l'authentification
         $this->loadComponent('Auth', [
@@ -78,4 +81,6 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
     }
+    
+
 }

@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: p1701300
- * Date: 19/12/2018
- * Time: 15:09
+ * User: Tanguy
+ * Date: 03/01/2019
+ * Time: 13:29
  */
 
 namespace App\Controller;
@@ -16,16 +16,27 @@ class UsersController extends AppController
         $user = $this->Users->find();
         if (!empty($this->getRequest()->getData())) {
             $user = $this->Users->newEntity($this->getRequest()->getData());
-            //dd($user);
-            //dd($this->Users->save($user));
+            $user->statut = $this->convertListe($user->statut);
             if ($this->Users->save($user)) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['action' => 'login']));
-            } else {
+                $this->redirect((['action' => 'add']));
+            }
+            else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
             }
         }
         $this->set(compact('user'));
+    }
+
+    private function convertListe($statut){
+        switch($statut) {
+            case 0:
+                return 'Adhérent';
+            case 1:
+                return 'Gérant';
+            case 2:
+                return 'Moniteur';
+        }
     }
 
     public function affiche()
@@ -48,6 +59,7 @@ class UsersController extends AppController
             ->toArray();
         $this->set(compact('user'));
     }
+
 
     public function login()
     {
