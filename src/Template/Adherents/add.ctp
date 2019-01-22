@@ -1,6 +1,5 @@
 <?php
 
-
 echo $this->Form->create($adherent, ['type' => 'file']);
 echo $this->Form->control('nom', ['label' => 'Nom de l\'utilisateur']);
 echo $this->Form->control('prenom', ['label' => 'Prénom de l\'utilisateur']);
