@@ -22,10 +22,12 @@ class AdherentsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->requirePresence('nomTuteur', 'create')-> notEmpty('nomTuteur', "Un nom de tuteur est nécessaire")
-            ->requirePresence('adresseTuteur', 'create') ->notEmpty('adresseTuteur', 'Un prenom de tuteur est nécessaire')
-            ->requirePresence('telTuteur', 'create')->notEmpty('telTuteur', 'Un mot de passe de tuteur est nécessaire')
-            ->requirePresence('mailTuteur', 'create')->notEmpty('mailTuteur', 'Un numéro de téléphone est nécessaire');
+            ->requirePresence('nom', 'create')->notEmpty('nom', "Un nom de personne est nécessaire")
+            ->requirePresence('prenom', 'create')->notEmpty('prenom', 'Un prenom est nécessaire')
+            ->requirePresence('tel', 'create')->notEmpty('tel', 'Un numéro de téléphone est nécessaire')
+            ->requirePresence('mail', 'create')->notEmpty('mail', 'Un mail est nécessaire')
+            ->requirePresence('dateNaissance', 'create')->notEmpty('dateNaissance', 'Une date de naissance est nécessaire');
         return $validator;
     }
+
 }

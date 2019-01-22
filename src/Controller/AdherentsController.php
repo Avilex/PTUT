@@ -11,20 +11,19 @@ namespace App\Controller;
 
 class AdherentsController extends AppController
 {
-    public function add($id = null){
+    public function add(){
         $adherent = $this->Adherents->find();
         if (!empty($this->getRequest()->getData())) {
             $adherent = $this->Adherents->newEntity($this->getRequest()->getData());
-            $adherent->user_id = $id;
             if ($this->Adherents->save($adherent)) {
-                $this->Flash->success('L\'utilisateur a été crée');
+                $this->Flash->success('L\'adhérent a été crée');
                 $this->redirect((['action' => 'affiche']));
-            }
-            else {
-                $this->Flash->error("Impossible d'ajouter l'utilisateur");
+
+            } else {
+                $this->Flash->error("Impossible d'ajouter l'adhérent");
             }
         }
-        $this->set(compact('adherent', 'id'));
+        $this->set(compact('adherent'));
     }
 
     public function affiche(){
@@ -44,4 +43,7 @@ class AdherentsController extends AppController
         $adherent = $this->Adherents->find()->toArray();
         $this->set(compact('adherent'));
     }
+
+
+
 }

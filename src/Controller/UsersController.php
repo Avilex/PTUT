@@ -11,19 +11,40 @@ namespace App\Controller;
 
 class UsersController extends AppController
 {
-    public function add($id = null){
+    public function add(){
         $user = $this->Users->find();
+        $adherent = $this->Users->Adherents->find();
         if (!empty($this->getRequest()->getData())) {
             $user = $this->Users->newEntity($this->getRequest()->getData());
-            if ($this->Users->save($user)) {
+            $adherent = $this->Users->Adherents->newEntity($this->getRequest()->getData());
+            $user->statut = $this->convertListe($user->statut);
+            if(isset($_POST['tuteur']) == true) {
+                if(empty($_POST['nomTuteur']) || empty($_POST['adresseTuteur']) || empty($_POST['telTuteur']) || empty($_POST['mailTuteur'])){
+                    $this->Flash->error("Vous avez oubliez de remplir les champs pour le tuteur");
+                    $this->redirect((['action' => 'add']));
+                }
+
+            }
+            if ($this->Users->save($user) && ($this->Users->Adherents->save($adherent))) {
                 $this->Flash->success('L\'utilisateur a été crée');
-                $this->redirect((['controller'=>'Adherents', 'action' => 'add',$user->id]));
+                $this->redirect((['action' => 'add']));
             }
             else {
                 $this->Flash->error("Impossible d'ajouter l'utilisateur");
             }
         }
         $this->set(compact('user'));
+    }
+
+    private function convertListe($statut){
+        switch($statut) {
+            case 0:
+                return 'Adhérent';
+            case 1:
+                return 'Gérant';
+            case 2:
+                return 'Moniteur';
+        }
     }
 
     public function affiche(){
