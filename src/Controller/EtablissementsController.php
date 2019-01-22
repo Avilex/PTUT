@@ -12,4 +12,6 @@ namespace App\Controller;
 class EtablissementsController extends AppController
 {
 
+
+
 }
