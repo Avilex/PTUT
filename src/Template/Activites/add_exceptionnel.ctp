@@ -1,7 +1,7 @@
 <?php
 echo $this->Form->create($activite);
 echo $this->Form->control('nom');
-echo $this->Form->control('duree',['label' => 'Durée de l\'activite', 'type' => 'time']);
+echo $this->Form->control('duree');
 echo $this->Form->control('date',['label'=> 'Jour']);
 $activite->jour = null;
 echo $this->Form->select('typeSeance',['Forfait','Seance'],['empty'=>'Choisissez le type de seance']);
