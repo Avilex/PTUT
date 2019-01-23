@@ -1,0 +1,1184 @@
+2018-12-19 14:04:48 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2018-12-19 15:12:01 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2018-12-19 15:53:55 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:14:34 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:22:14 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:22:15 Error: [Cake\Controller\Exception\MissingActionException] Action FacturesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FacturesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /factures
+
+
+2019-01-21 08:22:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:22:20 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 08:22:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:22:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:22:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:28:25 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:28:30 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:28:30 Error: [Cake\Controller\Exception\MissingActionException] Action FacturesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FacturesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /factures
+
+
+2019-01-21 08:30:24 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:30:24 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:30:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:30:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:32:01 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:32:01 Error: [Cake\Controller\Exception\MissingActionException] Action FacturesController::generate() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FacturesController',
+  'action' => 'generate',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /factures/generate
+
+
+2019-01-21 08:32:44 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:32:44 Error: [Cake\Controller\Exception\MissingActionException] Action FacturesController::gtest() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FacturesController',
+  'action' => 'gtest',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /factures/gtest
+
+
+2019-01-21 08:32:47 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:32:47 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 08:32:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:32:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:32:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:32:55 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:45:25 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:45:28 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:45:36 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:15 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:16 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 08:46:19 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:22 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:28 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:28 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 08:46:28 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:28 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 08:46:31 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:31 Error: [Cake\Controller\Exception\MissingActionException] Action FacturesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FacturesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /factures
+
+
+2019-01-21 08:46:37 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:49 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 08:46:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Home could not be found.
+Exception Attributes: array (
+  'class' => 'Home',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /home
+
+
+2019-01-21 08:46:51 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:19:45 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:19:49 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:19:49 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 09:19:49 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:19:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:19:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:20:11 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:20:11 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 09:20:11 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:20:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:20:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:20:14 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:32:21 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 09:32:22 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+
+
+2019-01-21 09:32:22 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:32:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 09:32:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 10:00:54 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:03 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:03 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /Users
+
+
+2019-01-21 10:30:10 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:10 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:21 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:26 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:29 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:30 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:40 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:43 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:30:44 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:05 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:14 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:23 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:27 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:28 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:35 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:33:57 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:34:42 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:36:32 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:36:32 Error: [Error] Call to a member function identify() on boolean
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(610): App\Controller\UsersController->login()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /users/login?redirect=%2FUsers%2Flogin
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2FUsers%2Flogin
+
+
+2019-01-21 10:36:32 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Debugger.php line=853 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /users/login?redirect=%2FUsers%2Flogin
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2FUsers%2Flogin
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 10:36:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Debugger.php:853) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /users/login?redirect=%2FUsers%2Flogin
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2FUsers%2Flogin
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 10:36:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Debugger.php:853) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /users/login?redirect=%2FUsers%2Flogin
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2FUsers%2Flogin
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 10:37:43 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:37:44 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:38:23 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:40:12 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:40:12 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:40:21 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:40:27 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:40:27 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:41:50 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:41:56 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:42:13 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:42:13 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:42:17 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:42:17 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/
+
+
+2019-01-21 10:42:22 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:49:23 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:49:24 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:49:32 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:49:32 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:24 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:30 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:30 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:47 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:52 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:52 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::ladd() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ladd',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/ladd
+
+
+2019-01-21 10:52:55 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:55 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:52:55 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2019-01-21 10:53:18 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:53:18 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2019-01-21 10:53:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:53:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2019-01-21 10:53:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:53:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2019-01-21 10:53:43 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:53:43 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/login?redirect=%2Fusers%2Fadd
+
+
+2019-01-21 10:53:48 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:54:00 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:54:32 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:54:51 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:01 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:09 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:10 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Add could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /add
+
+
+2019-01-21 10:57:28 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:57:37 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:58:44 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:58:44 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:58:48 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:58:53 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 10:59:14 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:08 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:26 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:26 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:34 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:34 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:39 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:43 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:43 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:51 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:51 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /users/
+
+
+2019-01-21 11:04:54 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:04:54 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:07 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:19 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:34 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:34 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:45 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:45 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:53 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:05:53 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:06:17 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:06:17 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:06:17 Error: [Cake\View\Exception\MissingTemplateException] Template file "Factures/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Factures/test.ctp',
+)
+#0 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/View/View.php(876): Cake\View\View->_getViewFileName('Factures/test')
+#1 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\FacturesController))
+#4 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /factures/test
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2Ffactures%2Ftest
+
+
+2019-01-21 11:06:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php line=350 in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /factures/test
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2Ffactures%2Ftest
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 11:06:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /factures/test
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2Ffactures%2Ftest
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 11:06:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/tecnickcom/tcpdf/include/tcpdf_static.php:350) in [/home1/UNIV-LYON1/p1701300/public_html/CakePHP/PTUT/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /factures/test
+Referer URL: http://iutbg-lamp.univ-lyon1.fr/p1701300/public_html/CakePHP/PTUT/users/login?redirect=%2Ffactures%2Ftest
+Client IP: 192.168.68.101
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-01-21 11:06:27 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2019-01-21 11:06:28 Warning: DebugKit is disabling itself as your host `iutbg-lamp.univ-lyon1.fr` is not in the known safe list of top-level-domains (localhost, dev, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
