@@ -23,6 +23,8 @@ Create table if not exists adherents(
 	tel varchar(255),
     mail varchar(255),
     dateNaissance date,
+    handicap text,
+    licence varchar(255),
     nomTuteur varchar(255),
     adresseTuteur varchar(255),
     telTuteur varchar(255),
@@ -57,7 +59,9 @@ Create table if not exists etablissements(
 
 Create table if not exists factures(
 	id int auto_increment,
-    primary key (id)
+	adherent_id int,
+    primary key (id),
+    key adherent_id (adherent_id)
 );
    
 select * from users;

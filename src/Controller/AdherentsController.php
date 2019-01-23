@@ -37,6 +37,9 @@ class AdherentsController extends AppController
         if ($this->getRequest()->getQuery('dateNaissance') != NULL) {
             $conditions['dateNaissance'] = $this->getRequest()->getQuery('dateNaissance');
         }
+        if ($this->getRequest()->getQuery('handicap') != NULL) {
+            $conditions['handicap'] = $this->getRequest()->getQuery('handicap');
+        }
         if ($this->getRequest()->getQuery('nomTuteur') != NULL) {
             $conditions['nomTuteur'] = $this->getRequest()->getQuery('nomTuteur');
         }
@@ -71,7 +74,7 @@ class AdherentsController extends AppController
         if ($this->request->is(['post', 'put'])) {
             $this->Adherents->patchEntity($adherents, $this->request->getData());
             if ($this->Adherents->save($adherents)) {
-                $this->Flash->success('User modifié avec succès !');
+                $this->Flash->success('Adhérent modifié avec succès !');
                 return $this->redirect(['action' => 'affiche']);
             }
             $this->Flash->error('Erreur lors de la mise à jour !');

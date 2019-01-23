@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Tanguy
- * Date: 03/01/2019
- * Time: 13:29
- */
 
 namespace App\Controller;
 
@@ -57,11 +51,10 @@ class UsersController extends AppController
         }
         $user = $this->Users->find()
             ->where($conditions)
-            ->toArray();toArray();
+            ->toArray();
         $this->set(compact('user'));
     }
 
-    //supprimer un user
     public function delete($id = null)
     {
         $user = $this->Users->get($id);
