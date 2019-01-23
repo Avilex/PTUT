@@ -1,4 +1,5 @@
 <?php
+//formulaire création d'une activité
 echo $this->Form->create($activite);
 echo $this->Form->control('nom');
 echo $this->Form->control('duree');

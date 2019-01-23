@@ -1,5 +1,5 @@
 <?php
-
+//affichage des activités
 echo '<table style="width:100%">
   <tr>
     <th>Nom</th>
@@ -18,8 +18,20 @@ foreach ($activites as $activite) {
         echo '<td>' . $activite->date . '</td>';
     if ($activite->date == null)
         echo '<td>' . $activite->jour . '</td>';
-    echo '<td>' . $this->Html->link('Supprimer', ['controller' => 'Activites', 'action' => 'delete', $activite->id], ['class' => 'button', 'title' => 'suppression activite']) .
-        ' '.$this->Html->link('Modifier', ['controller' => 'Activites', 'action' => 'edit', $activite->id], ['class' => 'button', 'title' => 'modifier l\'activite']) . '</td>
+    //bouton supprimer une activité
+    echo '<td>' . $this->Html->link(
+        'Supprimer',
+            ['controller' => 'Activites',
+                'action' => 'delete', $activite->id],
+            ['class' => 'button',
+                'title' => 'suppression activite']) .
+        //bouton modifier une activité
+        ' ' . $this->Html->link(
+            'Modifier',
+            ['controller' => 'Activites',
+                'action' => 'edit', $activite->id],
+            ['class' => 'button',
+                'title' => 'modifier l\'activite']) . '</td>
   </tr>';
 }
 echo '</table>';

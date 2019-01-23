@@ -1,5 +1,5 @@
 <?php
-
+//formulaire modification activités
 echo $this->Form->create($activiteEdit);
 if ($activiteEdit->jour != null) {
     echo $this->Form->control('nom');

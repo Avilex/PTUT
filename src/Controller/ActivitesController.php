@@ -12,6 +12,7 @@ namespace App\Controller;
 class ActivitesController extends AppController
 {
 
+    //ajouter une activité
     public function add()
     {
         $activite = $this->Activites->newEntity();
@@ -31,6 +32,7 @@ class ActivitesController extends AppController
         $this->set(compact('activite'));
     }
 
+    //ajouter une activité exceptionnelle
     public function addExceptionnel()
     {
         $activite = $this->Activites->newEntity();
@@ -48,6 +50,7 @@ class ActivitesController extends AppController
         $this->set(compact('activite'));
     }
 
+    //convertir la liste jours semaine
     private function convertListeString($var)
     {
         switch ($var) {
@@ -68,6 +71,7 @@ class ActivitesController extends AppController
         }
     }
 
+    //conversion liste séance
     private function convertListeTypeSeance($var)
     {
         switch ($var) {
@@ -78,13 +82,14 @@ class ActivitesController extends AppController
         }
     }
 
-
+    //affichage activités
     public function affiche()
     {
         $activites = $this->Activites->find('all');
         $this->set(compact('activites', 'total'));
     }
 
+    //modifier des activités
     public function edit($id = null)
     {
         $activite = $this->Activites->get($id);
@@ -103,6 +108,7 @@ class ActivitesController extends AppController
         $this->set('activiteEdit', $activite);
     }
 
+    //modifier des activités exceptionnelles
     public function editExceptionnel($id = null)
     {
         $activite = $this->Activites->get($id);
@@ -119,6 +125,7 @@ class ActivitesController extends AppController
         $this->set('activiteEdit', $activite);
     }
 
+    //suppression d'une activité
     public function delete($id = null)
     {
         $activite = $this->Activites->get($id);

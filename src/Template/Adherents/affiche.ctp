@@ -8,37 +8,37 @@ echo '<br>' . $this->Html->link(
     );
 
 foreach ($adherent as $adherents) {
+    //affichage d'un adhérent
     echo '<br>' . '<br>';
     echo "Nom de l'adhérent : $adherents->nom" . '<br>';
     echo "Prenom de l'adhérent : $adherents->prenom" . '<br>';
     echo "Telephone de l'adhérent : $adherents->tel" . '<br>';
     echo "Mail de l'adhérent : $adherents->mail" . '<br>';
     echo "Date de naissance : $adherents->dateNaissance" . '<br>';
-    if($adherents->nomTuteur == null || $adherents->adresseTuteur == null || $adherents->telTuteur == null || $adherents->mailTuteur == null){
+    if ($adherents->nomTuteur == null || $adherents->adresseTuteur == null || $adherents->telTuteur == null || $adherents->mailTuteur == null) {
         echo "Nom de son tuteur: Pas de tuteur renseigné" . '<br>';
         echo "Adresse de son tuteur : Pas de tuteur renseigné" . '<br>';
         echo "Telephone de son tuteur : Pas de tuteur renseigné" . '<br>';
         echo "Mail de son tuteur : Pas de tuteur renseigné" . '<br>';
-    }
-    else {
+    } else {
         echo "Nom de son tuteur: $adherents->nomTuteur" . '<br>';
         echo "Adresse de son tuteur : $adherents->adresseTuteur" . '<br>';
         echo "Telephone de son tuteur : $adherents->telTuteur" . '<br>';
         echo "Mail de son tuteur : $adherents->mailTuteur" . '<br>';
     }
-    echo " " . $this->Html->link(
-            'Suppression d\'un adhérent',
+    //suppression de l'adhérent
+    echo "<br>" . $this->Html->link(
+            'Suppression de l\'adhérent',
             ['controller' => 'Adherents', 'action' => 'delete', $adherents->id],
-            ['class' => 'button', 'title' => 'Suppression adhérent']
+            ['class' => 'button', 'title' => 'Suppression de l\'adhérent']
         );
-
+    //modification de l'adhérent
     echo " " . $this->Html->link(
-            'Modification d\'un user',
+            'Modification de l\'adhérent',
             ['controller' => 'Adherents', 'action' => 'modif', $adherents->id],
-            ['class' => 'button', 'title' => 'Modification user']
+            ['class' => 'button', 'title' => 'Modification d\'un adhérent']
         );
 }
-
 
 //Lien retour
 echo '<br>' . $this->Html->link(
