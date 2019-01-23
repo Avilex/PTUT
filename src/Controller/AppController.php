@@ -58,7 +58,7 @@ class AppController extends Controller
         // à fonctionner. Autorise également les actions "read-only".
         $this->Auth->allow(['display', 'view', 'index']);
         //pour la déconnexion
-        $this->Auth->allow(['logout']);
+        $this->Auth->allow(['logout','add']);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
