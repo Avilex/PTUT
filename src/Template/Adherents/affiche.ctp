@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 echo '<table style="width:100%">
   <tr>
     <th>Nom adhérent</th>
@@ -15,14 +14,13 @@ echo '<table style="width:100%">
     <th>Téléphone tuteur</th>
     <th>Mail tuteur</th>
   </tr>';
-=======
+
 //Lien pour créer un adhérent
 echo '<br>' . $this->Html->link(
         'Créer un adhérent',
         ['controller' => 'Adherents', 'action' => 'add'],
         ['class' => 'button', 'title' => 'Créer un adhérent']
     );
->>>>>>> c960663829c66d8ff16c608493b21dda0ea48d17
 
 foreach ($adherent as $adherents) {
     echo'
@@ -60,11 +58,13 @@ foreach ($adherent as $adherents) {
     </tr>';
 }
 
-<<<<<<< HEAD
 echo'</table>';
 
-echo $this->Html->link('Retour',['controller'=>'Adherents','action'=> 'add'],['class'=>'button','title'=>'revenir à l\'ajout d\'un adherent']);
-=======
+echo $this->Html->link('Retour',
+        ['controller'=>'Adherents',
+         'action'=> 'add'],
+        ['class'=>'button',
+        'title'=>'revenir à l\'ajout d\'un adherent']);
 
 //Lien retour
 echo '<br>' . $this->Html->link(
@@ -72,5 +72,3 @@ echo '<br>' . $this->Html->link(
         ['controller' => 'Users', 'action' => 'home'],
         ['class' => 'button', 'title' => 'Retour']
     );
-
->>>>>>> c960663829c66d8ff16c608493b21dda0ea48d17

@@ -14,6 +14,7 @@ namespace App\Controller;
 
 class UsersController extends AppController
 {
+    //fonction ajout user
     public function add()
     {
         $user = $this->Users->find();
@@ -30,6 +31,7 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
+    //fonction convertir liste
     private function convertListe($statut)
     {
         switch ($statut) {
@@ -40,6 +42,7 @@ class UsersController extends AppController
         }
     }
 
+    //fonction affichafe users
     public function affiche()
     {
         $conditions = [];
@@ -75,21 +78,24 @@ class UsersController extends AppController
         }
     }
 
-    public function modif($id = null){
+    //modifier un user
+    public function modif($id = null)
+    {
         $user = $this->Users->get($id);
         if ($this->request->is(['post', 'put'])) {
-             $this->Users->patchEntity($user, $this->request->getData());
-             $user->statut = $this->convertListe($user->statut);
-                  if ($this->Users->save($user)) {
-                      $this->Flash->success('User modifié avec succès !');
-                      return $this->redirect(['action' => 'affiche']);
-                  }
-                  $this->Flash->error('Erreur lors de la mise à jour !');
+            $this->Users->patchEntity($user, $this->request->getData());
+            $user->statut = $this->convertListe($user->statut);
+            if ($this->Users->save($user)) {
+                $this->Flash->success('User modifié avec succès !');
+                return $this->redirect(['action' => 'affiche']);
+            }
+            $this->Flash->error('Erreur lors de la mise à jour !');
         }
-      $this->set('userModif', $user);
+        $this->set('userModif', $user);
     }
-  
-  public function login()
+
+    //connexion
+    public function login()
     {
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
@@ -101,12 +107,14 @@ class UsersController extends AppController
         }
     }
 
+    //déconnexion
     public function logout()
     {
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
 
+    //page d'accueil
     public function homepage()
     {
         $conditions = [];
@@ -122,13 +130,13 @@ class UsersController extends AppController
         if ($this->getRequest()->getQuery('mail') != NULL) {
             $conditions['mail'] = $this->getRequest()->getQuery('mail');
         }
-         $user = $this->Users->find()
+        $user = $this->Users->find()
             ->where($conditions)
             ->toArray();
         $this->set(compact('user'));
     }
 
-
+    //home du gérant
     public function home()
     {
         $conditions = [];
