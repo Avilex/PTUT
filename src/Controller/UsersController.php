@@ -65,7 +65,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect((['action' => 'home']));
+                return $this->redirect((['action' => 'homepage']));
             }
             $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
         }
@@ -75,6 +75,27 @@ class UsersController extends AppController
     {
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
+    }
+
+    public function homepage()
+    {
+        $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+        $user = $this->Users->find()
+            ->where($conditions)
+            ->toArray();
+        $this->set(compact('user'));
     }
 
     public function home()

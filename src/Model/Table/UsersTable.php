@@ -11,6 +11,7 @@ namespace App\Model\Table;
 
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use function Sodium\add;
 
 class UsersTable extends Table
 {
@@ -29,5 +30,6 @@ class UsersTable extends Table
             ->requirePresence('mail', 'create')->notEmpty('mail', 'Un mail est nécessaire');
         return $validator;
     }
+
 
 }

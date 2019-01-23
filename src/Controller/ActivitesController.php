@@ -36,8 +36,8 @@ class ActivitesController extends AppController
         $activite = $this->Activites->newEntity();
         if (!empty($this->getRequest()->getData())) {
             $activite = $this->Activites->newEntity($this->getRequest()->getData());
-           /* if($activite->typeSeance != null)
-                $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);*/
+            /* if($activite->typeSeance != null)
+                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);*/
             if ($this->Activites->save($activite)) {
                 $this->Flash->success(__('Votre activité a été sauvegardé.'));
                 return $this->redirect(['action' => 'add']);
@@ -48,8 +48,9 @@ class ActivitesController extends AppController
         $this->set(compact('activite'));
     }
 
-    private function convertListeString($var){
-        switch ($var){
+    private function convertListeString($var)
+    {
+        switch ($var) {
             case 0:
                 return 'lundi';
             case 1:
@@ -66,8 +67,10 @@ class ActivitesController extends AppController
                 return 'dimanche';
         }
     }
-    private function convertListeTypeSeance($var){
-        switch ($var){
+
+    private function convertListeTypeSeance($var)
+    {
+        switch ($var) {
             case 0:
                 return 'Forfait';
             case 1:
@@ -87,33 +90,35 @@ class ActivitesController extends AppController
         $activite = $this->Activites->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Activites->patchEntity($activite, $this->request->getData());
-            if($activite->jour != null)
-                 $activite->jour = $this->convertListeString($activite->jour);
-             if($activite->typeSeance != null)
-                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
+            if ($activite->jour != null)
+                $activite->jour = $this->convertListeString($activite->jour);
+            if ($activite->typeSeance != null)
+                $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
             if ($this->Activites->save($activite)) {
                 $this->Flash->success('Activitée modifié avec succès !');
-                return $this->redirect(['action'=>'affiche']);
+                return $this->redirect(['action' => 'affiche']);
             }
             $this->Flash->error('Erreur lors de la mise à jour !');
         }
         $this->set('activiteEdit', $activite);
     }
+
     public function editExceptionnel($id = null)
     {
         $activite = $this->Activites->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Activites->patchEntity($activite, $this->request->getData());
-            if($activite->typeSeance != null)
-                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
+            if ($activite->typeSeance != null)
+                $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
             if ($this->Activites->save($activite)) {
                 $this->Flash->success('Activitée modifié avec succès !');
-                return $this->redirect(['action'=>'affiche']);
+                return $this->redirect(['action' => 'affiche']);
             }
             $this->Flash->error('Erreur lors de la mise à jour !');
         }
         $this->set('activiteEdit', $activite);
     }
+
     public function delete($id = null)
     {
         $activite = $this->Activites->get($id);

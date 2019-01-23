@@ -10,7 +10,7 @@
     <?php //Lien pour gérer les activités
     echo '<br>' . $this->Html->link(
             'Activités',
-            ['controller' => 'Activite', 'action' => 'affiche'],
+            ['controller' => 'Activites', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Consulter les activités']
         );
 
@@ -71,6 +71,17 @@
             ['controller' => 'Users', 'action' => 'add'],
             ['class' => 'button', 'title' => 'Créer un nouvel utilisateur']
         ); ?>
+</p>
+
+<p style="text-align: center;">
+    <?php
+    //Lien pour retour
+    echo '<br>' . $this->Html->link(
+            'Retour',
+            ['controller' => 'Users', 'action' => 'homepage'],
+            ['class' => 'button', 'title' => 'retour page d\'accueil']
+        ); ?>
+
 </p>
 
 <p style="text-align: center;">
