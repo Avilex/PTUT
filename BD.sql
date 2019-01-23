@@ -36,6 +36,9 @@ Create table if not exists activites(
     duree time,
 	date Date,
     jour varchar(255),
+    prix double,
+    typeSeance varchar(50),
+    divers varchar(255),
     primary key(id)
 );
 
@@ -62,7 +65,6 @@ Create table if not exists factures(
    
 select * from users;
 select * from adherents;
+select * from activites;
 
-
- 
 
