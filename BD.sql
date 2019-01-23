@@ -25,7 +25,7 @@ Create table if not exists adherents(
     dateNaissance date,
     nomTuteur varchar(255),
     adresseTuteur varchar(255),
-    telTuteur text,
+    telTuteur varchar(255),
     mailTuteur varchar(255),
     primary key(id)
 );

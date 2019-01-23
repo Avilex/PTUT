@@ -14,7 +14,6 @@ echo $this->Form->control('nomTuteur', ['label' => 'Nom du tuteur']);
 echo $this->Form->control('adresseTuteur', ['label' => 'Adresse du tuteur']);
 echo $this->Form->control('telTuteur', ['label' => 'Téléphone du tuteur', 'type' => 'tel']);
 echo $this->Form->control('mailTuteur', ['label' => 'Mail du tuteur', 'type' => 'email']);
-
 echo $this->Form->button('Ajouter');
 echo $this->Form->end();
 
