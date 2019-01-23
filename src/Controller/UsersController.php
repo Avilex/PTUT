@@ -1,10 +1,13 @@
 <?php
+<<<<<<< HEAD
+=======
 /**
  * Created by PhpStorm.
  * User: p1701300
  * Date: 19/12/2018
  * Time: 15:09
  */
+>>>>>>> c960663829c66d8ff16c608493b21dda0ea48d17
 
 namespace App\Controller;
 
@@ -64,7 +67,6 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
-    //supprimer un user
     public function delete($id = null)
     {
         $user = $this->Users->get($id);

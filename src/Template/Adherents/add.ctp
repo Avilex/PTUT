@@ -10,6 +10,8 @@ echo $this->Form->control('dateNaissance', [
     'minYear' => date('Y') - 100,
     'maxYear' => date('Y'),
 ]);
+echo $this->Form->control('handicap', ['label' => 'Handicap de l\'adhérent']);
+echo $this->Form->control('licence', ['label' => 'Licence de l\'adhérent']);
 echo $this->Form->control('nomTuteur', ['label' => 'Nom du tuteur']);
 echo $this->Form->control('adresseTuteur', ['label' => 'Adresse du tuteur']);
 echo $this->Form->control('telTuteur', ['label' => 'Téléphone du tuteur', 'type' => 'tel']);

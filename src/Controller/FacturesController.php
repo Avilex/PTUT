@@ -1,17 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: p1701300
- * Date: 19/12/2018
- * Time: 15:08
- */
 
 namespace App\Controller;
 
 
-use Spipu\Html2Pdf\Html2Pdf;
-
-class FacturesController extends AppController
+class FacturesController  extends AppController
 {
 
     public function test(){
