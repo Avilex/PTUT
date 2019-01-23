@@ -26,7 +26,6 @@ class EtablissementsController extends AppController
         $this->set(compact('etablissement'));
     }
 
-
     public function affiche()
     {
         $etablissements = $this->Etablissements->find('all');
@@ -46,4 +45,5 @@ class EtablissementsController extends AppController
         }
         $this->set('etablissementEdit', $etablissement);
     }
+
 }
