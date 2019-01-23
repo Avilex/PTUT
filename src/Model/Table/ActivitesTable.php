@@ -13,5 +13,9 @@ use Cake\ORM\Table;
 
 class ActivitesTable extends Table
 {
+    public function initialize(array  $config){
+        parent::initialize($config);
+        $this->belongsToMany('Adherents');
 
+    }
 }

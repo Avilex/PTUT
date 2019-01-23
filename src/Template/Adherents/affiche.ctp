@@ -27,3 +27,4 @@ echo '<br>' . $this->Html->link(
         ['controller' => 'Users', 'action' => 'home'],
         ['class' => 'button', 'title' => 'Retour']
     );
+
