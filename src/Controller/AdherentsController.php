@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Tanguy
- * Date: 03/01/2019
- * Time: 17:36
- */
 
 namespace App\Controller;
 
@@ -28,6 +22,21 @@ class AdherentsController extends AppController
 
     public function affiche(){
         $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+        if ($this->getRequest()->getQuery('dateNaissance') != NULL) {
+            $conditions['dateNaissance'] = $this->getRequest()->getQuery('dateNaissance');
+        }
         if ($this->getRequest()->getQuery('nomTuteur') != NULL) {
             $conditions['nomTuteur'] = $this->getRequest()->getQuery('nomTuteur');
         }
@@ -40,10 +49,33 @@ class AdherentsController extends AppController
         if ($this->getRequest()->getQuery('mailTuteur') != NULL) {
             $conditions['mailTuteur'] = $this->getRequest()->getQuery('mailTuteur');
         }
-        $adherent = $this->Adherents->find()->toArray();
+        $adherent = $this->Adherents->find()
+            ->where($conditions)
+            ->toArray();
         $this->set(compact('adherent'));
     }
 
+    public function delete($id = null)
+    {
+        $adherents = $this->Adherents->get($id);
+        if ($this->Adherents->delete($adherents)) {
+            $this->Flash->success("L'adhérent a été supprimé avec succès !");
+            return $this->redirect(['action' => 'affiche']);
+        } else {
+            $this->Flash->error("Une erreur est survenue lors de la suppression !");
+        }
+    }
 
-
+    public function modif($id = null){
+        $adherents = $this->Adherents->get($id);
+        if ($this->request->is(['post', 'put'])) {
+            $this->Adherents->patchEntity($adherents, $this->request->getData());
+            if ($this->Adherents->save($adherents)) {
+                $this->Flash->success('User modifié avec succès !');
+                return $this->redirect(['action' => 'affiche']);
+            }
+            $this->Flash->error('Erreur lors de la mise à jour !');
+        }
+        $this->set('adherentModif', $adherents);
+    }
 }

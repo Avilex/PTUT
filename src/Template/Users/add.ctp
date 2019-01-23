@@ -1,4 +1,5 @@
 <?php
+
 echo $this->Form->create($user);//url->
 echo $this->Form->select('statut', [
     '0' => 'Gérant',

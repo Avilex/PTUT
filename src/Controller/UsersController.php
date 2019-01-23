@@ -52,14 +52,42 @@ class UsersController extends AppController
         if ($this->getRequest()->getQuery('mail') != NULL) {
             $conditions['mail'] = $this->getRequest()->getQuery('mail');
         }
+        if ($this->getRequest()->getQuery('dateNaissance') != NULL) {
+            $conditions['dateNaissance'] = $this->getRequest()->getQuery('dateNaissance');
+        }
         $user = $this->Users->find()
             ->where($conditions)
-            ->toArray();
+            ->toArray();toArray();
         $this->set(compact('user'));
     }
 
+    //supprimer un user
+    public function delete($id = null)
+    {
+        $user = $this->Users->get($id);
+        if ($this->Users->delete($user)) {
+            $this->Flash->success("L'user a été supprimé avec succès !");
+            return $this->redirect(['action' => 'affiche']);
+        } else {
+            $this->Flash->error("Une erreur est survenue lors de la suppression !");
+        }
+    }
 
-    public function login()
+    public function modif($id = null){
+        $user = $this->Users->get($id);
+        if ($this->request->is(['post', 'put'])) {
+             $this->Users->patchEntity($user, $this->request->getData());
+             $user->statut = $this->convertListe($user->statut);
+                  if ($this->Users->save($user)) {
+                      $this->Flash->success('User modifié avec succès !');
+                      return $this->redirect(['action' => 'affiche']);
+                  }
+                  $this->Flash->error('Erreur lors de la mise à jour !');
+        }
+      $this->set('userModif', $user);
+    }
+  
+  public function login()
     {
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
@@ -92,11 +120,12 @@ class UsersController extends AppController
         if ($this->getRequest()->getQuery('mail') != NULL) {
             $conditions['mail'] = $this->getRequest()->getQuery('mail');
         }
-        $user = $this->Users->find()
+         $user = $this->Users->find()
             ->where($conditions)
             ->toArray();
         $this->set(compact('user'));
     }
+
 
     public function home()
     {
