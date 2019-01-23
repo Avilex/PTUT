@@ -24,6 +24,7 @@ foreach ($user as $users) {
             ['class' => 'button', 'title' => 'Suppression user'])
         .$this->Html->link('Modifier',['controller' => 'Users', 'action' => 'modif', $users->id],
             ['class' => 'button', 'title' => 'Modification user']
+<<<<<<< HEAD
         ).'</td>
     </tr>';
 }
@@ -31,3 +32,23 @@ foreach ($user as $users) {
 echo'</table>';
 
 echo $this->Html->link('Retour',['controller'=>'Users','action'=> 'add'],['class'=>'button','title'=>'revenir à l\'ajout d\'un user']);
+=======
+        );
+}
+
+echo '<br>' . '<br>';
+echo "Nom : " . $this->getRequest()->getSession()->read("Auth.User.nom") . '<br>';
+echo "Prenom : " . $this->getRequest()->getSession()->read("Auth.User.prenom") . '<br>';
+echo "Telephone : " . $this->getRequest()->getSession()->read("Auth.User.tel") . '<br>';
+echo "Mail : " . $this->getRequest()->getSession()->read("Auth.User.mail") . '<br>';
+echo "Statut : " . $this->getRequest()->getSession()->read("Auth.User.statut") . '<br>';
+
+
+//Lien retour
+echo '<br>' . $this->Html->link(
+        'Retour',
+        ['controller' => 'Users', 'action' => 'home'],
+        ['class' => 'button', 'title' => 'Retour']
+    );
+
+>>>>>>> c960663829c66d8ff16c608493b21dda0ea48d17

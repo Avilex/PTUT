@@ -1,4 +1,13 @@
 <?php
+<<<<<<< HEAD
+=======
+/**
+ * Created by PhpStorm.
+ * User: p1701300
+ * Date: 19/12/2018
+ * Time: 15:09
+ */
+>>>>>>> c960663829c66d8ff16c608493b21dda0ea48d17
 
 namespace App\Controller;
 
@@ -77,6 +86,69 @@ class UsersController extends AppController
                   }
                   $this->Flash->error('Erreur lors de la mise à jour !');
         }
-        $this->set('userModif', $user);
+      $this->set('userModif', $user);
+    }
+  
+  public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect((['action' => 'homepage']));
+            }
+            $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+        }
+    }
+
+    public function logout()
+    {
+        $this->Flash->success('Vous avez été déconnecté.');
+        return $this->redirect($this->Auth->logout());
+    }
+
+    public function homepage()
+    {
+        $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+         $user = $this->Users->find()
+            ->where($conditions)
+            ->toArray();
+        $this->set(compact('user'));
+    }
+
+
+    public function home()
+    {
+        $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+        $user = $this->Users->find()
+            ->where($conditions)
+            ->toArray();
+        $this->set(compact('user'));
     }
 }
+
+//$this->getRequest()->getSession()->read("Auth.User.statut");
