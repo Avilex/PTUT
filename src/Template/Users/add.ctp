@@ -7,7 +7,7 @@ echo $this->Form->select('statut', [
 ]);
 echo $this->Form->control('nom', ['label' => 'Nom de l\'utilisateur']);
 echo $this->Form->control('prenom', ['label' => 'Prénom de l\'utilisateur']);
-echo $this->Form->control('tel', ['label' => 'Téléphone de l\'utilisateur', 'type' => 'tel']);
+echo $this->Form->control('tel', ['label' => 'Téléphone de l\'utilisateur (Format 0X.XX.XX.XX.XX)', 'type' => 'tel']);
 echo $this->Form->control('mail', ['label' => 'Mail de l\'utilisateur', 'type' => 'email']);
 echo $this->Form->control('password', ['label' => 'Mot de passe de l\'utilisateur', 'type'=>'password']);
 echo $this->Form->button('Ajouter');

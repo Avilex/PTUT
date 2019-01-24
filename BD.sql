@@ -59,6 +59,8 @@ Create table if not exists etablissements(
     adresse varchar(255),
     codePostal varchar(255),
 	ville varchar(255),
+    nomDirecteur varchar(255),
+    tel varchar(255),
     primary key(id)
 );
 
