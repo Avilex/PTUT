@@ -1,5 +1,12 @@
 <?php
 
+//Lien pour créer un adhérent
+echo '<br>' . $this->Html->link(
+        'Créer un adhérent',
+        ['controller' => 'Adherents', 'action' => 'add'],
+        ['class' => 'button', 'title' => 'Créer un adhérent']
+    );
+
 echo '<table style="width:100%">
   <tr>
     <th>Nom adhérent</th>
@@ -15,24 +22,17 @@ echo '<table style="width:100%">
     <th>Mail tuteur</th>
   </tr>';
 
-//Lien pour créer un adhérent
-echo '<br>' . $this->Html->link(
-        'Créer un adhérent',
-        ['controller' => 'Adherents', 'action' => 'add'],
-        ['class' => 'button', 'title' => 'Créer un adhérent']
-    );
-
 //affichage des adhérents
 foreach ($adherent as $adherents) {
     echo '
     <tr>
-        <td>' . $this->Html->link($adherents->nom, ['controller' => 'Users', 'action' => 'affiche']) . '</td>
-        <td>' . $adherents->prenom . '</td>
-        <td>' . $adherents->tel . '</td>
-        <td>' . $adherents->mail . '</td>
-        <td>' . $adherents->dateNaissance . '</td>
-        <td>' . $adherents->handicap . '</td>
-        <td>' . $adherents->licence . '</td>
+        <td>'. $this->Html->link($adherents->nom,['controller' => 'Factures', 'action' => 'add', $adherents->id]).'</td>
+        <td>'. $adherents->prenom.'</td>
+        <td>'. $adherents->tel.'</td>
+        <td>'. $adherents->mail.'</td>
+        <td>'. $adherents->dateNaissance.'</td>
+        <td>'. $adherents->handicap.'</td>
+        <td>'. $adherents->licence.'</td>
     ';
     if ($adherents->nomTuteur == null || $adherents->adresseTuteur == null || $adherents->telTuteur == null || $adherents->mailTuteur == null) {
         echo '
@@ -49,24 +49,20 @@ foreach ($adherent as $adherents) {
             <td>' . $adherents->mailTuteur . '</td>
         ';
     }
-    echo '
-        <td>' . $this->Html->link(
-            'Supprimer',
-            ['controller' => 'Adherents',
-                'action' => 'delete', $adherents->id],
-            ['class' => 'button',
-                'title' => 'Suppression adherent'])
-        . ' ' . $this->Html->link(
-            'Modifier',
-            ['controller' => 'Adherents',
-                'action' => 'modif', $adherents->id],
-            ['class' => 'button',
-                'title' => 'Modification adherent']
-        ) . '</td>        
+
+    echo'
+        <td>'. $this->Html->link('Supprimer',['controller' => 'Adherents', 'action' => 'delete', $adherents->id],
+            ['class' => 'button', 'title' => 'Suppression adherent'])
+            .$this->Html->link('Modifier',['controller' => 'Adherents', 'action' => 'modif', $adherents->id],
+                ['class' => 'button', 'title' => 'Modification adherent'])
+            .$this->Html->link('Voir factures',['controller' => 'Factures', 'action' => 'affiche', $adherents->id],
+                ['class' => 'button', 'title' => 'Voir factures']).
+        '</td>        
     </tr>';
 }
 
-echo '</table>';
+echo'</table>';
+
 
 //Lien retour
 echo $this->Html->link(

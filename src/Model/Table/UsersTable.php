@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: p1701300
- * Date: 19/12/2018
- * Time: 16:30
+ * User: Tanguy
+ * Date: 03/01/2019
+ * Time: 13:30
  */
 
 namespace App\Model\Table;
@@ -33,6 +33,5 @@ class UsersTable extends Table
             ]);
         return $validator;
     }
-
 
 }

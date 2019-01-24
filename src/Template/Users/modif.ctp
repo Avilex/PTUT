@@ -12,5 +12,3 @@ echo $this->Form->select('statut', [
 ]);
 echo $this->Form->button('Mettre à jour');
 echo $this->Form->end();
-echo '<br>';
-?>
