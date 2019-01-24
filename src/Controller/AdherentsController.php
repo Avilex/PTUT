@@ -81,4 +81,25 @@ class AdherentsController extends AppController
         }
         $this->set('adherentModif', $adherents);
     }
+
+    public function facture($id = null){
+        $adherents = $this->Adherents->get($id);
+        if ($this->request->is(['post', 'put'])) {
+            $this->Adherents->patchEntity($adherents, $this->request->getData());
+        }
+        $this->set('adherentFact', $adherents);
+    }
+
+    public function modifFacture($id = null){
+        $adherents = $this->Adherents->get($id);
+        if ($this->request->is(['post', 'put'])) {
+            $this->Adherents->patchEntity($adherents, $this->request->getData());
+            if ($this->Adherents->save($adherents)) {
+                $this->Flash->success('Adhérent modifié avec succès !');
+                return $this->redirect(['action' => 'facture']);
+            }
+            $this->Flash->error('Erreur lors de la mise à jour !');
+        }
+        $this->set('ModifFacture', $adherents);
+    }
 }

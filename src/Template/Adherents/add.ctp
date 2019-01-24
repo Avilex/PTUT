@@ -19,10 +19,3 @@ echo $this->Form->control('mailTuteur', ['label' => 'Mail du tuteur', 'type' => 
 echo $this->Form->button('Ajouter');
 echo $this->Form->end();
 
-//Lien retour
-echo '<br>' . $this->Html->link(
-        'Retour',
-        ['controller' => 'Adherents', 'action' => 'affiche'],
-        ['class' => 'button', 'title' => 'Retour']
-    );
-

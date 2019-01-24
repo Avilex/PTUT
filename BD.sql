@@ -38,9 +38,6 @@ Create table if not exists activites(
     duree time,
 	date Date,
     jour varchar(255),
-    prix double,
-    typeSeance varchar(50),
-    divers varchar(255),
     primary key(id)
 );
 
@@ -62,6 +59,8 @@ Create table if not exists etablissements(
 
 Create table if not exists factures(
 	id int auto_increment,
+    nom varchar(255),
+    etat varchar(255),
 	adherent_id int,
     primary key (id),
     key adherent_id (adherent_id)
@@ -69,6 +68,10 @@ Create table if not exists factures(
    
 select * from users;
 select * from adherents;
-select * from activites;
+select * from factures;
 
+select nom from factures where adherent_id = 2;
+
+
+ 
 

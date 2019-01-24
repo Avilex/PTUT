@@ -10,12 +10,20 @@ namespace App\Model\Table;
 
 
 use Cake\ORM\Table;
+use Cake\Validation\Validator;
 
 class FacturesTable extends Table
 {
     public function initialize(array $config){
         parent::initialize($config);
         $this->belongsTo('Adherents');
+    }
+
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->requirePresence('nom', 'create')->notEmpty('nom', "Un nom de facture est nécessaire");
+        return $validator;
     }
 
 }
