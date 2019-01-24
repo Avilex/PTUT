@@ -1,5 +1,5 @@
 <?php
-
+//formulaire modification d'un user
 echo $this->Form->create($userModif);
 echo $this->Form->control('nom');
 echo $this->Form->control('prenom');

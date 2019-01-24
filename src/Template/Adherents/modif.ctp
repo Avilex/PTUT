@@ -1,5 +1,5 @@
 <?php
-
+//formulaire modification adhérent
 echo $this->Form->create($adherentModif);
 echo $this->Form->control('nom');
 echo $this->Form->control('prenom');
@@ -17,7 +17,6 @@ echo $this->Form->control('adresseTuteur');
 echo $this->Form->control('telTuteur');
 echo $this->Form->control('mailTuteur');
 echo $this->Form->button('Mettre à jour');
-
 echo $this->Form->end();
 echo '<br>';
-?>
+

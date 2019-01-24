@@ -14,6 +14,16 @@ echo '<table style="width:100%">
     <th>Téléphone tuteur</th>
     <th>Mail tuteur</th>
   </tr>';
+<<<<<<< HEAD
+=======
+
+//Lien pour créer un adhérent
+echo '<br>' . $this->Html->link(
+        'Créer un adhérent',
+        ['controller' => 'Adherents', 'action' => 'add'],
+        ['class' => 'button', 'title' => 'Créer un adhérent']
+    );
+>>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3
 
 foreach ($adherent as $adherents) {
     echo'
@@ -55,4 +65,19 @@ foreach ($adherent as $adherents) {
 
 echo'</table>';
 
+<<<<<<< HEAD
 echo $this->Html->link('Retour',['controller'=>'Adherents','action'=> 'add'],['class'=>'button','title'=>'revenir à l\'ajout d\'un adherent']);
+=======
+echo $this->Html->link('Retour',
+        ['controller'=>'Adherents',
+         'action'=> 'add'],
+        ['class'=>'button',
+        'title'=>'revenir à l\'ajout d\'un adherent']);
+
+//Lien retour
+echo '<br>' . $this->Html->link(
+        'Retour',
+        ['controller' => 'Users', 'action' => 'home'],
+        ['class' => 'button', 'title' => 'Retour']
+    );
+>>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3

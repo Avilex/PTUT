@@ -5,7 +5,9 @@ namespace App\Controller;
 
 class AdherentsController extends AppController
 {
-    public function add(){
+    //ajouter un adhérent
+    public function add()
+    {
         $adherent = $this->Adherents->find();
         if (!empty($this->getRequest()->getData())) {
             $adherent = $this->Adherents->newEntity($this->getRequest()->getData());
@@ -20,7 +22,9 @@ class AdherentsController extends AppController
         $this->set(compact('adherent'));
     }
 
-    public function affiche(){
+    //afficher les adhérents
+    public function affiche()
+    {
         $conditions = [];
         if ($this->getRequest()->getQuery('nom') != NULL) {
             $conditions['nom'] = $this->getRequest()->getQuery('nom');
@@ -58,6 +62,7 @@ class AdherentsController extends AppController
         $this->set(compact('adherent'));
     }
 
+    //suppression d'un adhérent
     public function delete($id = null)
     {
         $adherents = $this->Adherents->get($id);
@@ -69,7 +74,9 @@ class AdherentsController extends AppController
         }
     }
 
-    public function modif($id = null){
+    //modifier un adhérent
+    public function modif($id = null)
+    {
         $adherents = $this->Adherents->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Adherents->patchEntity($adherents, $this->request->getData());

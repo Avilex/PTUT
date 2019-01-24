@@ -1,6 +1,6 @@
 <?php
-
-echo $this->Form->create($user);//url->
+//formulaire création d'un utilisateur
+echo $this->Form->create($user); //url->
 echo $this->Form->select('statut', [
     '0' => 'Gérant',
     '1' => 'Moniteur'

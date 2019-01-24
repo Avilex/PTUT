@@ -5,6 +5,7 @@ namespace App\Controller;
 
 class UsersController extends AppController
 {
+    //fonction ajout user
     public function add()
     {
         $user = $this->Users->find();
@@ -21,6 +22,7 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
+    //fonction convertir liste
     private function convertListe($statut)
     {
         switch ($statut) {
@@ -31,6 +33,7 @@ class UsersController extends AppController
         }
     }
 
+    //fonction affichafe users
     public function affiche()
     {
         $conditions = [];
@@ -66,9 +69,12 @@ class UsersController extends AppController
         }
     }
 
-    public function modif($id = null){
+    //modifier un user
+    public function modif($id = null)
+    {
         $user = $this->Users->get($id);
         if ($this->request->is(['post', 'put'])) {
+<<<<<<< HEAD
              $this->Users->patchEntity($user, $this->request->getData());
              $user->statut = $this->convertListe($user->statut);
                   if ($this->Users->save($user)) {
@@ -80,3 +86,82 @@ class UsersController extends AppController
         $this->set('userModif', $user);
     }
 }
+=======
+            $this->Users->patchEntity($user, $this->request->getData());
+            $user->statut = $this->convertListe($user->statut);
+            if ($this->Users->save($user)) {
+                $this->Flash->success('User modifié avec succès !');
+                return $this->redirect(['action' => 'affiche']);
+            }
+            $this->Flash->error('Erreur lors de la mise à jour !');
+        }
+        $this->set('userModif', $user);
+    }
+
+    //connexion
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect((['action' => 'homepage']));
+            }
+            $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+        }
+    }
+
+    //déconnexion
+    public function logout()
+    {
+        $this->Flash->success('Vous avez été déconnecté.');
+        return $this->redirect($this->Auth->logout());
+    }
+
+    //page d'accueil
+    public function homepage()
+    {
+        $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+        $user = $this->Users->find()
+            ->where($conditions)
+            ->toArray();
+        $this->set(compact('user'));
+    }
+
+    //home du gérant
+    public function home()
+    {
+        $conditions = [];
+        if ($this->getRequest()->getQuery('nom') != NULL) {
+            $conditions['nom'] = $this->getRequest()->getQuery('nom');
+        }
+        if ($this->getRequest()->getQuery('prenom') != NULL) {
+            $conditions['prenom'] = $this->getRequest()->getQuery('prenom');
+        }
+        if ($this->getRequest()->getQuery('tel') != NULL) {
+            $conditions['tel'] = $this->getRequest()->getQuery('tel');
+        }
+        if ($this->getRequest()->getQuery('mail') != NULL) {
+            $conditions['mail'] = $this->getRequest()->getQuery('mail');
+        }
+        $user = $this->Users->find()
+            ->where($conditions)
+            ->toArray();
+        $this->set(compact('user'));
+    }
+}
+
+//$this->getRequest()->getSession()->read("Auth.User.statut");
+>>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3

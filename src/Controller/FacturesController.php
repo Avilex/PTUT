@@ -20,6 +20,11 @@ class FacturesController  extends AppController
         $this->set(compact('facture', 'id'));
     }
 
+    public function test(){
+            $html2pdf = new Html2Pdf();
+            $html2pdf->writeHTML('<h1>HelloWorld</h1>This is my first test');
+            $html2pdf->output();
+    }
 
     public function affiche($id = null){
         $conditions = [];
