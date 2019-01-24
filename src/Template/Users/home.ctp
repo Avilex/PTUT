@@ -34,7 +34,7 @@
     //Lien pour gérer les Factures
     echo ' ' . $this->Html->link(
             'Factures',
-            ['controller' => 'Factures', 'action' => 'affiche'],
+            ['controller' => 'Factures', 'action' => 'test'],
             ['class' => 'button', 'title' => 'Consulter les factures']
         ); ?>
 </p>

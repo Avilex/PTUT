@@ -1,4 +1,14 @@
 <?php
+
+//bouton ajouter une activité
+echo '<br>' . $this->Html->link(
+        'Ajouter une activité',
+        ['controller' => 'Activites',
+            'action' => 'add'],
+        ['class' => 'button',
+            'title' => 'Ajouter une activité']
+    );
+
 //affichage des activités
 echo '<table style="width:100%">
   <tr>
@@ -20,7 +30,7 @@ foreach ($activites as $activite) {
         echo '<td>' . $activite->jour . '</td>';
     //bouton supprimer une activité
     echo '<td>' . $this->Html->link(
-        'Supprimer',
+            'Supprimer',
             ['controller' => 'Activites',
                 'action' => 'delete', $activite->id],
             ['class' => 'button',
@@ -36,14 +46,6 @@ foreach ($activites as $activite) {
 }
 echo '</table>';
 
-//bouton ajouter une activité
-echo $this->Html->link(
-    'Ajouter une activité',
-    ['controller' => 'Activites',
-        'action' => 'add'],
-    ['class' => 'button',
-        'title' => 'Ajouter une activité']
-);
 
 //Lien retour
 echo '<br>' . $this->Html->link(

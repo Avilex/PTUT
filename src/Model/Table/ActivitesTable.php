@@ -23,7 +23,7 @@ class ActivitesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->requirePresence('nom', 'create')->notEmpty('nom', "Un nom d'\activité est nécessaire");
+            ->requirePresence('nom', 'create');
             //->requirePresence('duree', 'create')->notEmpty('duree', 'Une durée est nécessaire')
             //->requirePresence('date', 'create')->notEmpty('date', 'La date est nécessaire')
             //->requirePresence('jour', 'create')->notEmpty('jour', 'Un jour est nécessaire');

@@ -11,6 +11,8 @@ namespace App\Model\Table;
 
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\Localized\Validation\FrValidation;
+use function Sodium\add;
 
 class UsersTable extends Table
 {
@@ -22,11 +24,13 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->requirePresence('nom', 'create')->notEmpty('nom', "Un nom de personne est nécessaire")
-            ->requirePresence('prenom', 'create')->notEmpty('prenom', 'Un prenom est nécessaire')
-            ->requirePresence('password', 'create')->notEmpty('password', 'Un password est nécessaire')
-            ->requirePresence('tel', 'create')->notEmpty('tel', 'Un numéro de téléphone est nécessaire')
-            ->requirePresence('mail', 'create')->notEmpty('mail', 'Un mail est nécessaire');
+            ->requirePresence(['nom','prenom','password','tel','mail'], 'create')
+            ->setProvider('fr', FrValidation::class)
+            ->add('tel', 'myCustomRuleNameForPhone', [
+                'rule' => 'phone',
+                'provider' => 'fr',
+                'message' => 'Numéro invalide',
+            ]);
         return $validator;
     }
 

@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: p1701300
+ * Date: 19/12/2018
+ * Time: 15:09
+ */
+
+
 namespace App\Controller;
 
 
@@ -74,7 +82,6 @@ class UsersController extends AppController
     {
         $user = $this->Users->get($id);
         if ($this->request->is(['post', 'put'])) {
-<<<<<<< HEAD
              $this->Users->patchEntity($user, $this->request->getData());
              $user->statut = $this->convertListe($user->statut);
                   if ($this->Users->save($user)) {
@@ -82,18 +89,6 @@ class UsersController extends AppController
                       return $this->redirect(['action' => 'affiche']);
                   }
                   $this->Flash->error('Erreur lors de la mise à jour !');
-        }
-        $this->set('userModif', $user);
-    }
-}
-=======
-            $this->Users->patchEntity($user, $this->request->getData());
-            $user->statut = $this->convertListe($user->statut);
-            if ($this->Users->save($user)) {
-                $this->Flash->success('User modifié avec succès !');
-                return $this->redirect(['action' => 'affiche']);
-            }
-            $this->Flash->error('Erreur lors de la mise à jour !');
         }
         $this->set('userModif', $user);
     }
@@ -164,4 +159,3 @@ class UsersController extends AppController
 }
 
 //$this->getRequest()->getSession()->read("Auth.User.statut");
->>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3

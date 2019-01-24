@@ -1,5 +1,12 @@
 <?php
 
+//Lien pour créer un adhérent
+echo '<br>' . $this->Html->link(
+        'Créer un adhérent',
+        ['controller' => 'Adherents', 'action' => 'add'],
+        ['class' => 'button', 'title' => 'Créer un adhérent']
+    );
+
 echo '<table style="width:100%">
   <tr>
     <th>Nom adhérent</th>
@@ -14,19 +21,10 @@ echo '<table style="width:100%">
     <th>Téléphone tuteur</th>
     <th>Mail tuteur</th>
   </tr>';
-<<<<<<< HEAD
-=======
 
-//Lien pour créer un adhérent
-echo '<br>' . $this->Html->link(
-        'Créer un adhérent',
-        ['controller' => 'Adherents', 'action' => 'add'],
-        ['class' => 'button', 'title' => 'Créer un adhérent']
-    );
->>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3
-
+//affichage des adhérents
 foreach ($adherent as $adherents) {
-    echo'
+    echo '
     <tr>
         <td>'. $this->Html->link($adherents->nom,['controller' => 'Factures', 'action' => 'add', $adherents->id]).'</td>
         <td>'. $adherents->prenom.'</td>
@@ -36,22 +34,22 @@ foreach ($adherent as $adherents) {
         <td>'. $adherents->handicap.'</td>
         <td>'. $adherents->licence.'</td>
     ';
-    if($adherents->nomTuteur == null || $adherents->adresseTuteur == null || $adherents->telTuteur == null || $adherents->mailTuteur == null){
-        echo'
-            <td>'. "Pas de tuteur renseigné". '</td>
-            <td>'. "Pas de tuteur renseigné". '</td>
-            <td>'. "Pas de tuteur renseigné". '</td>
-            <td>'. "Pas de tuteur renseigné". '</td>
+    if ($adherents->nomTuteur == null || $adherents->adresseTuteur == null || $adherents->telTuteur == null || $adherents->mailTuteur == null) {
+        echo '
+            <td>' . "Pas de tuteur renseigné" . '</td>
+            <td>' . "Pas de tuteur renseigné" . '</td>
+            <td>' . "Pas de tuteur renseigné" . '</td>
+            <td>' . "Pas de tuteur renseigné" . '</td>
+        ';
+    } else {
+        echo '
+            <td>' . $adherents->nomTuteur . '</td>
+            <td>' . $adherents->adresseTuteur . '</td>
+            <td>' . $adherents->telTuteur . '</td>
+            <td>' . $adherents->mailTuteur . '</td>
         ';
     }
-    else {
-        echo'
-            <td>'. $adherents->nomTuteur. '</td>
-            <td>'. $adherents->adresseTuteur. '</td>
-            <td>'. $adherents->telTuteur. '</td>
-            <td>'. $adherents->mailTuteur. '</td>
-        ';
-    }
+
     echo'
         <td>'. $this->Html->link('Supprimer',['controller' => 'Adherents', 'action' => 'delete', $adherents->id],
             ['class' => 'button', 'title' => 'Suppression adherent'])
@@ -65,19 +63,10 @@ foreach ($adherent as $adherents) {
 
 echo'</table>';
 
-<<<<<<< HEAD
-echo $this->Html->link('Retour',['controller'=>'Adherents','action'=> 'add'],['class'=>'button','title'=>'revenir à l\'ajout d\'un adherent']);
-=======
-echo $this->Html->link('Retour',
-        ['controller'=>'Adherents',
-         'action'=> 'add'],
-        ['class'=>'button',
-        'title'=>'revenir à l\'ajout d\'un adherent']);
 
 //Lien retour
-echo '<br>' . $this->Html->link(
-        'Retour',
-        ['controller' => 'Users', 'action' => 'home'],
-        ['class' => 'button', 'title' => 'Retour']
-    );
->>>>>>> 8be64f6aaf923864d36696849a91d90ca581e6f3
+echo $this->Html->link(
+    'Retour',
+    ['controller' => 'Users', 'action' => 'home'],
+    ['class' => 'button', 'title' => 'Retour']
+);
