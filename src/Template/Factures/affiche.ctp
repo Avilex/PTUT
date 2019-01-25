@@ -1,5 +1,5 @@
 <?php
-
+//affichage des factures de l'adhérent
 echo '<table style="width:100%">
   <tr>
     <th>Numero facture</th>
@@ -15,12 +15,16 @@ echo '<table style="width:100%">
         <td>' . $factures->etat . '</td>
         <td>' . $this->Html->link('Supprimer', ['controller' => 'factures', 'action' => 'delete', $factures->id],
              ['class' => 'button', 'title' => 'Validation facture']).
-         $this->Html->link('Modifier', ['controller' => 'factures', 'action' => 'modif', $factures->id],
+         ' '.$this->Html->link('Modifier', ['controller' => 'factures', 'action' => 'modif', $factures->id],
              ['class' => 'button', 'title' => 'Modifier facture']).'</td>        
     </tr>';
  }
 
 echo'</table>';
 
-echo $this->Html->link('Retour',['controller'=>'Adherents','action'=> 'affiche'],['class'=>'button','title'=>'revenir à l\'affiche des adherents']);
+echo $this->Html->link('Retour',
+    ['controller'=>'Adherents',
+        'action'=> 'affiche'],
+    ['class'=>'button',
+        'title'=>'revenir à l\'affiche des adherents']);
 

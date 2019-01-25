@@ -52,8 +52,8 @@ foreach ($adherent as $adherents) {
 
     echo'
         <td>'. $this->Html->link('Supprimer',['controller' => 'Adherents', 'action' => 'delete', $adherents->id],
-            ['class' => 'button', 'title' => 'Suppression adherent'])
-            .$this->Html->link('Modifier',['controller' => 'Adherents', 'action' => 'modif', $adherents->id],
+            ['class' => 'button', 'title' => 'Suppression adherent']).
+            ' '.$this->Html->link('Modifier',['controller' => 'Adherents', 'action' => 'modif', $adherents->id],
                 ['class' => 'button', 'title' => 'Modification adherent'])
             .$this->Html->link('Voir factures',['controller' => 'Factures', 'action' => 'affiche', $adherents->id],
                 ['class' => 'button', 'title' => 'Voir factures']).
