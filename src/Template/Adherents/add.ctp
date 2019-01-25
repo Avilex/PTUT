@@ -1,3 +1,9 @@
+<p style="text-align: center;">
+    <?php
+    echo '<br>' . "Ajouter un nouvel adhérent";
+    ?>
+</p>
+
 <?php
 //formulaire ajout d'un adhérent
 echo $this->Form->create($adherent, ['type' => 'file']);
@@ -19,3 +25,10 @@ echo $this->Form->control('mailTuteur', ['label' => 'Mail du tuteur', 'type' => 
 echo $this->Form->button('Ajouter');
 echo $this->Form->end();
 
+
+//Lien retour
+echo '<br>'.$this->Html->link(
+    'Retour',
+    ['controller' => 'Adherents', 'action' => 'affiche'],
+    ['class' => 'button', 'title' => 'Retour']
+);

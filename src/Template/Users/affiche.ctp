@@ -8,7 +8,7 @@ echo '<table style="width:100%">
 
   <tr>
     <th>Nom</th>
-    <th>Prenom</th>
+    <th>Prénom</th>
     <th>Téléphone</th> 
     <th>Mail</th>
     <th>Statut</th>
@@ -43,7 +43,7 @@ echo '
 
     <tr>
         <th>Nom</th>
-        <th>Prenom</th>
+        <th>Prénom</th>
         <th>Téléphone</th>
         <th>Mail</th>
         <th>Statut</th>

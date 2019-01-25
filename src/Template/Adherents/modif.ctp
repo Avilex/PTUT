@@ -1,3 +1,8 @@
+<p style="text-align: center;">
+    <?php
+    echo '<br>' . "Modification de l'adhérent";
+    ?>
+</p>
 <?php
 //formulaire modification adhérent
 echo $this->Form->create($adherentModif);

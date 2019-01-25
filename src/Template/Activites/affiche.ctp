@@ -8,33 +8,49 @@ echo '<br>' . $this->Html->link(
         ['class' => 'button',
             'title' => 'Ajouter une activité']
     );
-
+?>
+    <p style="text-align: center;">
+        <?php
+        echo '<br>' . "Liste des activités";
+        ?>
+    </p>
+<?php
 //affichage des activités
 echo '<table style="width:100%">
   <tr>
     <th>Nom</th>
-    <th>Duree</th>
-    <th>Nombre Participant activitée</th> 
-    <th>Jour</th>
-    <th>Option</th>
+    <th>Durée</th>
+    <th>Jours</th>
+    <th>Prix</th>
+    <th>Divers</th>
+    <th>Nombre participants activité</th>
+    <th>Options</th>
   </tr>';
+
 foreach ($activites as $activite) {
     echo '
   <tr>
-    <td>' . $activite->nom . '</td>
-    <td>' . $activite->duree . '</td>
-    <td>A faire</td>';
-    if ($activite->jour == null)
-        echo '<td>' . $activite->date . '</td>';
-    if ($activite->date == null)
+    <td>' . $activite->nom . '</td>';
+    if ($activite->heures != null) {
+        echo '<td>' . $activite->heures . 'h' . $activite->minutes . 'mn' . '</td>';
+    } else {
+        echo '<td>' . date_diff($activite->dateFin, $activite->dateDebut)->format("%a") . ' jours' . '</td>';
+    }
+    if ($activite->jour == null) {
+        echo '<td>' . $activite->dateDebut . ' au ' . $activite->dateFin . '</td>';
+    } else if ($activite->date == null) {
         echo '<td>' . $activite->jour . '</td>';
+    }
+    echo '<td>' . $activite->prix . '€' . '</td>';
+    echo '<td>' . $activite->divers . '</td>';
+    echo '<td>A faire</td>';
     //bouton supprimer une activité
     echo '<td>' . $this->Html->link(
             'Supprimer',
             ['controller' => 'Activites',
                 'action' => 'delete', $activite->id],
             ['class' => 'button',
-                'title' => 'suppression activite']) .
+                'title' => 'suppression activité']) .
         //bouton modifier une activité
         ' ' . $this->Html->link(
             'Modifier',

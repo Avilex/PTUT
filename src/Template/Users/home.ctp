@@ -7,6 +7,12 @@
 ?>
 
 <p style="text-align: center;">
+    <?php
+    echo '<br>' . "HOME";
+    ?>
+</p>
+
+<p style="text-align: center;">
     <?php //Lien pour gérer les activités
     echo '<br>' . $this->Html->link(
             'Activités',

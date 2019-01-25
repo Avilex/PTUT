@@ -6,17 +6,23 @@ echo '<br>' . $this->Html->link(
         ['controller' => 'Adherents', 'action' => 'add'],
         ['class' => 'button', 'title' => 'Créer un adhérent']
     );
-
+?>
+<p style="text-align: center;">
+    <?php
+    echo '<br>' . "Liste des adhérents";
+    ?>
+</p>
+<?php
 echo '<table style="width:100%">
   <tr>
     <th>Nom adhérent</th>
-    <th>Prenom adhérent</th>
+    <th>Prénom adhérent</th>
     <th>Téléphone adhérent</th> 
     <th>Mail adhérent</th>
     <th>Date de naissance</th>
     <th>Handicap de l\'adhérent</th>
     <th>Licence</th>
-    <th>Nom de son tuteur</th>
+    <th>Nom tuteur</th>
     <th>Adresse tuteur</th>
     <th>Téléphone tuteur</th>
     <th>Mail tuteur</th>
@@ -55,7 +61,7 @@ foreach ($adherent as $adherents) {
             ['class' => 'button', 'title' => 'Suppression adherent']).
             ' '.$this->Html->link('Modifier',['controller' => 'Adherents', 'action' => 'modif', $adherents->id],
                 ['class' => 'button', 'title' => 'Modification adherent'])
-            .$this->Html->link('Voir factures',['controller' => 'Factures', 'action' => 'affiche', $adherents->id],
+            .' '.$this->Html->link('Voir factures',['controller' => 'Factures', 'action' => 'affiche', $adherents->id],
                 ['class' => 'button', 'title' => 'Voir factures']).
         '</td>        
     </tr>';

@@ -14,7 +14,8 @@ use Cake\Validation\Validator;
 
 class FacturesTable extends Table
 {
-    public function initialize(array $config){
+    public function initialize(array $config)
+    {
         parent::initialize($config);
         $this->belongsTo('Adherents');
     }
@@ -22,7 +23,7 @@ class FacturesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->requirePresence('nom', 'create')->notEmpty('nom', "Un nom de facture est nécessaire");
+            ->requirePresence('nom', 'create');
         return $validator;
     }
 

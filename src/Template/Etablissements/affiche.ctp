@@ -6,13 +6,20 @@ echo '<br>' . $this->Html->link(
         ['class' => 'button',
             'title' => 'ajouter un établissement']
     );
+?>
+    <p style="text-align: center;">
+        <?php
+        echo '<br>' . "Liste des établissements";
+        ?>
+    </p>
 
+<?php
 echo '<table style="width:100%">
   <tr>
     <th>Nom</th>
-    <th>Ville</th>
     <th>Adresse</th> 
     <th>Code postal</th>
+    <th>Ville</th>
     <th>Nom directeur</th>
     <th>Téléphone</th>
     <th>Options</th>
@@ -21,9 +28,9 @@ foreach ($etablissements as $etablissement) {
     echo '
   <tr>
     <td>' . $etablissement->nom . '</td>
-    <td>' . $etablissement->ville . '</td>
     <td>' . $etablissement->adresse . '</td>
     <td>' . $etablissement->codePostal . '</td>
+    <td>' . $etablissement->ville . '</td>
     <td>' . $etablissement->nomDirecteur . '</td>
     <td>' . $etablissement->tel . '</td>';
     echo

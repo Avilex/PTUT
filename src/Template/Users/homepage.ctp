@@ -6,6 +6,12 @@
  * Time: 10:02
  */
 ?>
+
+<p style="text-align: center;">
+    <?php
+    echo '<br>' . "HOME PAGE";
+    ?>
+</p>
 <p style="text-align: center;">
     <?php //Lien pour Moniteurs
     echo '<br>' . $this->Html->link(

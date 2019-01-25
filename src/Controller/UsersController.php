@@ -93,6 +93,23 @@ class UsersController extends AppController
         $this->set('userModif', $user);
     }
 
+    //modifier un mot de passe user
+    public function modifpassword($id = null)
+    {
+        $user = $this->Users->get($id);
+        if ($this->request->is(['post', 'put'])) {
+            $this->Users->patchEntity($user, $this->request->getData());
+            $user->statut = $this->convertListe($user->statut);
+            if ($this->Users->save($user)) {
+                $this->Flash->success('User modifié avec succès !');
+                return $this->redirect(['action' => 'affiche']);
+            }
+            $this->Flash->error('Erreur lors de la mise à jour !');
+        }
+        $this->set('mdpModif', $user);
+    }
+
+
     //connexion
     public function login()
     {

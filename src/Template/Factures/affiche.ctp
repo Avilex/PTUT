@@ -1,8 +1,14 @@
+<p style="text-align: center;">
+    <?php
+    echo '<br>' . "Liste des factures";
+    ?>
+</p>
+
 <?php
 //affichage des factures de l'adhérent
 echo '<table style="width:100%">
   <tr>
-    <th>Numero facture</th>
+    <th>Numéro facture</th>
     <th>Nom facture</th>
     <th>Etat facture</th>
   </tr>';
