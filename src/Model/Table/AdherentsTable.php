@@ -20,7 +20,10 @@ class AdherentsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        $this->hasOne('Factures');
+        $this->hasMany('Factures', [
+            'dependent' => true,
+            'cascadeCallbacks' => true,
+        ]);
     }
 
     public function validationDefault(Validator $validator)

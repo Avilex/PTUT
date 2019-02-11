@@ -89,7 +89,8 @@ class AdherentsController extends AppController
         $this->set('adherentModif', $adherents);
     }
 
-    public function facture($id = null){
+    public function facture($id = null)
+    {
         $adherents = $this->Adherents->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Adherents->patchEntity($adherents, $this->request->getData());
@@ -97,7 +98,8 @@ class AdherentsController extends AppController
         $this->set('adherentFact', $adherents);
     }
 
-    public function modifFacture($id = null){
+    public function modifFacture($id = null)
+    {
         $adherents = $this->Adherents->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Adherents->patchEntity($adherents, $this->request->getData());
@@ -108,5 +110,17 @@ class AdherentsController extends AppController
             $this->Flash->error('Erreur lors de la mise à jour !');
         }
         $this->set('ModifFacture', $adherents);
+    }
+
+    //le passer dans adhérents pour afficher les infos des adhérents
+    public function pdf($id = null, $nameFact = null)
+    {
+        //on récupère l'id de l'adhérent
+        $getid = $this->Adherents->get($id);
+        //on cherche l'adhérent
+        $adh = $this->Adherents->find()
+            ->contain(['Factures'])
+            ->where(['id' => ($getid->id)]);
+        $this->set(compact('adh', 'nameFact'));
     }
 }

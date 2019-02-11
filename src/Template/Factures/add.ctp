@@ -19,6 +19,6 @@ echo $this->Form->end();
 //bouton retour
 echo ' '.$this->Html->link(
     'Retour',
-    ['controller' => 'Adherents', 'action' => 'affiche'],
-    ['class' => 'button', 'title' => 'retour adherent']
+    ['controller' => 'Factures', 'action' => 'affiche', $id],
+    ['class' => 'button', 'title' => 'Retour Factures']
 );

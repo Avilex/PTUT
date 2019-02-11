@@ -3,18 +3,17 @@
 namespace App\Controller;
 
 
-use Spipu\Html2Pdf\Html2Pdf;
-
 class FacturesController extends AppController
 {
-    public function add($id = null){
+    public function add($id = null)
+    {
         $facture = $this->Factures->find();
         if (!empty($this->getRequest()->getData())) {
             $facture = $this->Factures->newEntity($this->getRequest()->getData());
             $facture->adherent_id = $id;
             if ($this->Factures->save($facture)) {
                 $this->Flash->success('Votre facture a été créé !');
-                $this->redirect(['controller'=>'Adherents','action' => 'affiche']);
+                $this->redirect(['controller' => 'Factures', 'action' => 'affiche',$id]);
             } else {
                 $this->Flash->error('Une erreur est survenue lors de l\'enregistrement !');
             }
@@ -22,14 +21,8 @@ class FacturesController extends AppController
         $this->set(compact('facture', 'id'));
     }
 
-    public function test()
+    public function affiche($id = null)
     {
-        $html2pdf = new Html2Pdf();
-        $html2pdf->writeHTML('<h1>HelloWorld</h1>This is my first test');
-        $html2pdf->output();
-    }
-
-    public function affiche($id = null){
         $conditions = [];
         if ($this->getRequest()->getQuery('nom') != NULL) {
             $conditions['nom'] = $this->getRequest()->getQuery('nom');
@@ -40,7 +33,7 @@ class FacturesController extends AppController
         $facture = $this->Factures->find()
             ->where(['adherent_id' => $id])
             ->toArray();
-        $this->set(compact('facture'));
+        $this->set(compact('facture','id'));
     }
 
     public function delete($id = null)
@@ -54,7 +47,8 @@ class FacturesController extends AppController
         }
     }
 
-    public function modif($id = null){
+    public function modif($id = null)
+    {
         $facture = $this->Factures->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->Factures->patchEntity($facture, $this->request->getData());
@@ -66,4 +60,6 @@ class FacturesController extends AppController
         }
         $this->set('factureModif', $facture);
     }
+
+
 }

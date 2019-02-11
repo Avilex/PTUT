@@ -25,24 +25,15 @@
             'Etablissements',
             ['controller' => 'Etablissements', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Consulter les établissements']
-        ); ?>
-</p>
+        );
 
-<p style="text-align: center;">
-    <?php
     //Lien pour gérer les Adhérents
-    echo '<br>' . $this->Html->link(
+    echo ' ' . $this->Html->link(
             'Adhérents',
             ['controller' => 'Adherents', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Consulter les adhérents']
         );
-
-    //Lien pour gérer les Factures
-    echo ' ' . $this->Html->link(
-            'Factures',
-            ['controller' => 'Factures', 'action' => 'test'],
-            ['class' => 'button', 'title' => 'Consulter les factures']
-        ); ?>
+    ?>
 </p>
 
 <p style="text-align: center;">

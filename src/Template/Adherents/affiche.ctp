@@ -32,7 +32,7 @@ echo '<table style="width:100%">
 foreach ($adherent as $adherents) {
     echo '
     <tr>
-        <td>'. $this->Html->link($adherents->nom,['controller' => 'Factures', 'action' => 'add', $adherents->id]).'</td>
+        <td>'. $adherents->nom.'</td>
         <td>'. $adherents->prenom.'</td>
         <td>'. $adherents->tel.'</td>
         <td>'. $adherents->mail.'</td>
