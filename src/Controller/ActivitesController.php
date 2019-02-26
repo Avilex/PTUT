@@ -136,4 +136,13 @@ class ActivitesController extends AppController
             $this->Flash->error("Une erreur est survenue lors de la suppression !");
         }
     }
+
+    public function inscrireAdherents($idAct = null,$idAdh = null){
+        $adherents = $this->Activites->Adherents->find();
+        $activite = $this->Activites->get($idAct);
+        $adherent = $this->Activites->Adherents->get($idAdh);
+        $this->Activites->Adherents->link($adherent, [$activite]);
+        $this->set(compact('activite','adherents'));
+    }
+
 }

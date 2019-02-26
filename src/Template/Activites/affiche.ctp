@@ -57,6 +57,11 @@ foreach ($activites as $activite) {
             ['controller' => 'Activites',
                 'action' => 'edit', $activite->id],
             ['class' => 'button',
+                'title' => 'modifier l\'activite'])
+        . ' ' . $this->Html->link(
+            'Inscrire Adherents',
+            ['action' => 'inscrireAdherents', $activite->id, $activite->id],
+            ['class' => 'button',
                 'title' => 'modifier l\'activite']) . '</td>
   </tr>';
 }
