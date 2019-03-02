@@ -4,29 +4,29 @@
 echo '<table style="width:100%">
   <tr>
     <th>Nom</th>
-    <th>Handicap</th>
+    <th>Prénom</th>
     <th>Option</th>
   </tr>';
 foreach ($adherents as $adherent) {
     echo '
   <tr>
     <td>' . $adherent->nom . '</td>
-    <td>' . $adherent->handicap . '</td>';
+    <td>' . $adherent->prenom . '</td>';
     echo '<td>' . $this->Html->link(
             'Inscrire',
-            ['controller' => 'Activites',
+            ['controller' => 'Activities',
                 'action' => 'inscrire_adherents', $activite->id, $adherent->id],
             ['class' => 'button',
                 'title' => 'suppression activite']) . '</td>
                 
   </tr>';
 }
-echo $this->Html->link(
-    'Retour',
-    ['controller' => 'Activites',
-        'action' => 'affiche'],
-    ['class' => 'button',
-        'title' => 'retour']);
+echo '<br>' . $this->Html->link(
+        'Retour',
+        ['controller' => 'Activities',
+            'action' => 'affiche'],
+        ['class' => 'button',
+            'title' => 'retour']);
 /*
 echo $this->Form->control('adherents._ids', ['options' => $adherents]) . '<br>'; probleme on ne voit pas les nom mais les id ...
 echo $this->Form->end();
@@ -43,7 +43,7 @@ foreach ($adherents as $adherent) {
     <td>' . $adherent->nom . '</td>';
     echo '<td>' . $this->Html->link(
             'Supprimer',
-            ['controller' => 'Activites',
+            ['controller' => 'Activities',
                 'action' => 'delete', $adherent->id],
             ['class' => 'button',
                 'title' => 'suppression activite']) .'
@@ -53,6 +53,6 @@ echo '</table>';
 //Lien retour
 echo '<br>' . $this->Html->link(
         'Retour',
-        ['controller' => 'Activites', 'action' => 'affiche'],
+        ['controller' => 'Activities', 'action' => 'affiche'],
         ['class' => 'button', 'title' => 'Retour']
     );*/

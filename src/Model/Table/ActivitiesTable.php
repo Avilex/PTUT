@@ -13,12 +13,12 @@ use Cake\Validation\Validator;
 use Cake\ORM\Rule\IsUnique;
 use Cake\ORM\RulesChecker;
 
-class ActivitesTable extends Table
+class ActivitiesTable extends Table
 {
     public function initialize(array $config)
     {
         parent::initialize($config);
-        $this->belongsToMany('Adherents');
+        $this->belongsToMany('Adherents',['foreignKey'=>'adherent_id','targetForeignKey'=>'activity_id']);
 
     }
 

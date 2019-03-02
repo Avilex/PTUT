@@ -12,7 +12,7 @@ use Spipu\Html2Pdf\Exception\ExceptionFormatter;
 <?php
 
 foreach ($adh as $adherent) {
-    foreach ($adherent->factures as $fact) {
+    foreach ($adherent->invoices as $fact) {
         if ($fact->nom == $nameFact) {
             ?>
             <div>

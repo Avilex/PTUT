@@ -20,10 +20,14 @@ class AdherentsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        $this->hasMany('Factures', [
+        $this->hasMany('Invoices', [
             'dependent' => true,
             'cascadeCallbacks' => true,
         ]);
+        $this->belongsToMany('Activities',
+            ['foreignKey' => 'activity_id',
+                'targetForeignKey' => 'adherent_id'
+            ]);
     }
 
     public function validationDefault(Validator $validator)

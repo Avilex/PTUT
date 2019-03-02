@@ -9,20 +9,20 @@
 namespace App\Controller;
 
 
-class ActivitesController extends AppController
+class ActivitiesController extends AppController
 {
 
     //ajouter une activité
     public function add()
     {
-        $activite = $this->Activites->newEntity();
+        $activite = $this->Activities->newEntity();
         if (!empty($this->getRequest()->getData())) {
-            $activite = $this->Activites->newEntity($this->getRequest()->getData());
+            $activite = $this->Activities->newEntity($this->getRequest()->getData());
             /*if($activite->jour != null)
                 $activite->jour = $this->convertListeString($activite->jour);
             if($activite->typeSeance != null)
                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);*/
-            if ($this->Activites->save($activite)) {
+            if ($this->Activities->save($activite)) {
                 $this->Flash->success(__('Votre activité a été sauvegardé.'));
                 return $this->redirect(['action' => 'add']);
             } else {
@@ -35,12 +35,12 @@ class ActivitesController extends AppController
     //ajouter une activité exceptionnelle
     public function addExceptionnel()
     {
-        $activite = $this->Activites->newEntity();
+        $activite = $this->Activities->newEntity();
         if (!empty($this->getRequest()->getData())) {
-            $activite = $this->Activites->newEntity($this->getRequest()->getData());
+            $activite = $this->Activities->newEntity($this->getRequest()->getData());
             /* if($activite->typeSeance != null)
                  $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);*/
-            if ($this->Activites->save($activite)) {
+            if ($this->Activities->save($activite)) {
                 $this->Flash->success(__('Votre activité a été sauvegardé.'));
                 return $this->redirect(['action' => 'add']);
             } else {
@@ -85,21 +85,21 @@ class ActivitesController extends AppController
     //affichage activités
     public function affiche()
     {
-        $activites = $this->Activites->find('all');
+        $activites = $this->Activities->find('all');
         $this->set(compact('activites', 'total'));
     }
 
     //modifier des activités
     public function edit($id = null)
     {
-        $activite = $this->Activites->get($id);
+        $activite = $this->Activities->get($id);
         if ($this->request->is(['post', 'put'])) {
-            $this->Activites->patchEntity($activite, $this->request->getData());
+            $this->Activities->patchEntity($activite, $this->request->getData());
             if ($activite->jour != null)
                 $activite->jour = $this->convertListeString($activite->jour);
             if ($activite->typeSeance != null)
                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
-            if ($this->Activites->save($activite)) {
+            if ($this->Activities->save($activite)) {
                 $this->Flash->success('Activitée modifié avec succès !');
                 return $this->redirect(['action' => 'affiche']);
             }
@@ -111,12 +111,12 @@ class ActivitesController extends AppController
     //modifier des activités exceptionnelles
     public function editExceptionnel($id = null)
     {
-        $activite = $this->Activites->get($id);
+        $activite = $this->Activities->get($id);
         if ($this->request->is(['post', 'put'])) {
-            $this->Activites->patchEntity($activite, $this->request->getData());
+            $this->Activities->patchEntity($activite, $this->request->getData());
             if ($activite->typeSeance != null)
                 $activite->typeSeance = $this->convertListeTypeSeance($activite->typeSeance);
-            if ($this->Activites->save($activite)) {
+            if ($this->Activities->save($activite)) {
                 $this->Flash->success('Activitée modifié avec succès !');
                 return $this->redirect(['action' => 'affiche']);
             }
@@ -128,8 +128,8 @@ class ActivitesController extends AppController
     //suppression d'une activité
     public function delete($id = null)
     {
-        $activite = $this->Activites->get($id);
-        if ($this->Activites->delete($activite)) {
+        $activite = $this->Activities->get($id);
+        if ($this->Activities->delete($activite)) {
             $this->Flash->success("L'activite a été supprimé avec succès !");
             return $this->redirect(['action' => 'affiche']);
         } else {
@@ -138,10 +138,16 @@ class ActivitesController extends AppController
     }
 
     public function inscrireAdherents($idAct = null,$idAdh = null){
-        $adherents = $this->Activites->Adherents->find();
-        $activite = $this->Activites->get($idAct);
-        $adherent = $this->Activites->Adherents->get($idAdh);
-        $this->Activites->Adherents->link($adherent, [$activite]);
+        $adherents = $this->Activities->Adherents->find();
+        $activite = $this->Activities->get($idAct);
+        $adherent = $this->Activities->Adherents->get($idAdh);
+        $this->Activities->Adherents->link($adherent, [$activite]);
+        $this->set(compact('activite','adherents'));
+    }
+
+    public function viewAdherents($idAct = null){
+        $adherents = $this->Activities->Adherents->find();
+        $activite = $this->Activities->get($idAct);
         $this->set(compact('activite','adherents'));
     }
 

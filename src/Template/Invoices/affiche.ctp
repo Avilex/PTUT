@@ -1,7 +1,7 @@
 <?php
 
 echo '<br>' . $this->Html->link('Ajouter une Facture',
-        ['controller' => 'Factures', 'action' => 'add', $id],
+        ['controller' => 'Invoices', 'action' => 'add', $id],
         ['class' => 'button', 'title' => 'Ajouter une facture']);
 ?>
 
@@ -24,9 +24,9 @@ foreach ($facture as $factures) {
      <tr>
         <td>' . $factures->nom . '</td>
         <td>' . $factures->etat . '</td>
-        <td>' . $this->Html->link('Supprimer', ['controller' => 'Factures', 'action' => 'delete', $factures->id],
+        <td>' . $this->Html->link('Supprimer', ['controller' => 'Invoices', 'action' => 'delete', $factures->id],
             ['class' => 'button', 'title' => 'Validation facture']) .
-        ' ' . $this->Html->link('Modifier', ['controller' => 'Factures', 'action' => 'modif', $factures->id],
+        ' ' . $this->Html->link('Modifier', ['controller' => 'Invoices', 'action' => 'modif', $factures->id],
             ['class' => 'button', 'title' => 'Modifier facture']) .
         ' ' . $this->Html->link('Voir la Facture', ['controller' => 'Adherents', 'action' => 'pdf', $id, $factures->nom],
             ['class' => 'button', 'title' => ' Voir la facture']) . '</td>        

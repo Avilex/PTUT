@@ -15,7 +15,7 @@ use Cake\Localized\Validation\FrValidation;
 use Cake\ORM\Rule\IsUnique;
 use Cake\ORM\RulesChecker;
 
-class EtablissementsTable extends Table
+class EstablishmentsTable extends Table
 {
     public function initialize(array $config)
     {

@@ -119,7 +119,7 @@ class AdherentsController extends AppController
         $getid = $this->Adherents->get($id);
         //on cherche l'adhérent
         $adh = $this->Adherents->find()
-            ->contain(['Factures'])
+            ->contain(['Invoices'])
             ->where(['id' => ($getid->id)]);
         $this->set(compact('adh', 'nameFact'));
     }

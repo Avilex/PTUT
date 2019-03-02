@@ -18,7 +18,7 @@ echo '<td>'.$this->Form->select('etat', [
 ]).'</td>';
 
 echo'
-     <td>'. $this->Html->link('Valider',['controller' => 'Factures', 'action' => 'add', $adherentFact->id],
+     <td>'. $this->Html->link('Valider',['controller' => 'Invoices', 'action' => 'add', $adherentFact->id],
         ['class' => 'button', 'title' => 'Validation facture'])
     .$this->Html->link('Modifier',['controller' => 'Adherents', 'action' => 'modifFacture', $adherentFact->id],
         ['class' => 'button', 'title' => 'Modification facture']).

@@ -16,7 +16,7 @@ echo $this->Form->control('tel');
 echo $this->Form->button('Valider');
 echo ' ' . $this->Html->link(
         'Annuler',
-        ['controller' => 'Etablissements',
+        ['controller' => 'Establishments',
             'action' => 'affiche'],
         ['class' => 'button',
             'title' => 'Annuler la modification']);

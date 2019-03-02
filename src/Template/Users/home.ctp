@@ -16,14 +16,14 @@
     <?php //Lien pour gérer les activités
     echo '<br>' . $this->Html->link(
             'Activités',
-            ['controller' => 'Activites', 'action' => 'affiche'],
+            ['controller' => 'Activities', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Consulter les activités']
         );
 
     //Lien pour gérer les établissements
     echo ' ' . $this->Html->link(
             'Etablissements',
-            ['controller' => 'Etablissements', 'action' => 'affiche'],
+            ['controller' => 'Establishments', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Consulter les établissements']
         );
 

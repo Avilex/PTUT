@@ -3,17 +3,17 @@
 namespace App\Controller;
 
 
-class FacturesController extends AppController
+class InvoicesController extends AppController
 {
     public function add($id = null)
     {
-        $facture = $this->Factures->find();
+        $facture = $this->Invoices->find();
         if (!empty($this->getRequest()->getData())) {
-            $facture = $this->Factures->newEntity($this->getRequest()->getData());
+            $facture = $this->Invoices->newEntity($this->getRequest()->getData());
             $facture->adherent_id = $id;
-            if ($this->Factures->save($facture)) {
+            if ($this->Invoices->save($facture)) {
                 $this->Flash->success('Votre facture a été créé !');
-                $this->redirect(['controller' => 'Factures', 'action' => 'affiche',$id]);
+                $this->redirect(['controller' => 'Invoices', 'action' => 'affiche',$id]);
             } else {
                 $this->Flash->error('Une erreur est survenue lors de l\'enregistrement !');
             }
@@ -30,7 +30,7 @@ class FacturesController extends AppController
         if ($this->getRequest()->getQuery('etat') != NULL) {
             $conditions['etat'] = $this->getRequest()->getQuery('etat');
         }
-        $facture = $this->Factures->find()
+        $facture = $this->Invoices->find()
             ->where(['adherent_id' => $id])
             ->toArray();
         $this->set(compact('facture','id'));
@@ -38,8 +38,8 @@ class FacturesController extends AppController
 
     public function delete($id = null)
     {
-        $facture = $this->Factures->get($id);
-        if ($this->Factures->delete($facture)) {
+        $facture = $this->Invoices->get($id);
+        if ($this->Invoices->delete($facture)) {
             $this->Flash->success("La facture a été supprimé avec succès !");
             return $this->redirect(['action' => 'affiche', $facture->adherent_id]);
         } else {
@@ -49,10 +49,10 @@ class FacturesController extends AppController
 
     public function modif($id = null)
     {
-        $facture = $this->Factures->get($id);
+        $facture = $this->Invoices->get($id);
         if ($this->request->is(['post', 'put'])) {
-            $this->Factures->patchEntity($facture, $this->request->getData());
-            if ($this->Factures->save($facture)) {
+            $this->Invoices->patchEntity($facture, $this->request->getData());
+            if ($this->Invoices->save($facture)) {
                 $this->Flash->success('Facture modifié avec succès !');
                 return $this->redirect(['action' => 'affiche', $facture->adherent_id]);
             }

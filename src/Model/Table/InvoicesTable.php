@@ -12,7 +12,7 @@ namespace App\Model\Table;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class FacturesTable extends Table
+class InvoicesTable extends Table
 {
     public function initialize(array $config)
     {

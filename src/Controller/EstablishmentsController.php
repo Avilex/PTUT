@@ -9,15 +9,15 @@
 namespace App\Controller;
 
 
-class EtablissementsController extends AppController
+class EstablishmentsController extends AppController
 {
     public function add()
     {
-        $etablissement = $this->Etablissements->newEntity();
+        $etablissement = $this->Establishments->newEntity();
         if (!empty($this->getRequest()->getData())) {
-            $etablissement = $this->Etablissements->newEntity($this->getRequest()->getData());
-            if ($this->Etablissements->save($etablissement)) {
-                $this->Flash->success(__('l\'etablissemet a bien été sauvegardé.'));
+            $etablissement = $this->Establishments->newEntity($this->getRequest()->getData());
+            if ($this->Establishments->save($etablissement)) {
+                $this->Flash->success(__('l\'etablissement a bien été sauvegardé.'));
                 return $this->redirect(['action' => 'add']);
             } else {
                 $this->Flash->error(__('Impossible de sauvegarder l\'établissements.'));
@@ -28,16 +28,16 @@ class EtablissementsController extends AppController
 
     public function affiche()
     {
-        $etablissements = $this->Etablissements->find('all');
+        $etablissements = $this->Establishments->find('all');
         $this->set(compact('etablissements'));
     }
 
     public function edit($id = null)
     {
-        $etablissement = $this->Etablissements->get($id);
+        $etablissement = $this->Establishments->get($id);
         if ($this->request->is(['post', 'put'])) {
-            $this->Etablissements->patchEntity($etablissement, $this->request->getData());
-            if ($this->Etablissements->save($etablissement)) {
+            $this->Establishments->patchEntity($etablissement, $this->request->getData());
+            if ($this->Establishments->save($etablissement)) {
                 $this->Flash->success('Etablissement modifié avec succès !');
                 return $this->redirect(['action'=>'affiche']);
             }

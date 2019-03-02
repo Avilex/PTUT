@@ -1,9 +1,9 @@
-Drop table if exists activites_adherents;
+Drop table if exists activities_adherents;
 Drop table if exists adherents;
 Drop table if exists users;
-Drop table if exists activites;
-Drop table if exists etablissements;
-Drop table if exists factures;
+Drop table if exists activities;
+Drop table if exists establishments;
+Drop table if exists invoices;
 
 Create table if not exists users(
 	id int auto_increment,
@@ -32,7 +32,7 @@ Create table if not exists adherents(
     primary key(id)
 );
 
-Create table if not exists activites(
+Create table if not exists activities(
 	id int auto_increment,
     nom varchar(255),
     heures int(3),
@@ -46,16 +46,16 @@ Create table if not exists activites(
     primary key(id)
 );
 
-Create table if not exists activites_adherents(
+Create table if not exists activities_adherents(
 	id int auto_increment,
     adherent_id int,
-    activite_id int,
+    activity_id int,
     primary key(id),
     KEY adherent_id (adherent_id),
-    KEY activite_id (activite_id)
+    KEY activity_id (activity_id)
 );
 
-Create table if not exists etablissements(
+Create table if not exists establishments(
 	id int auto_increment,
     nom varchar(255),
     adresse varchar(255),
@@ -66,7 +66,7 @@ Create table if not exists etablissements(
     primary key(id)
 );
 
-Create table if not exists factures(
+Create table if not exists invoices(
 	id int auto_increment,
     nom varchar(255),
     etat varchar(255),
@@ -77,9 +77,10 @@ Create table if not exists factures(
    
 select * from users;
 select * from adherents;
-select * from factures;
-select * from etablissements;
-select * from activites;
+select * from invoices;
+select * from establishments;
+select * from activities;
+select * from activities_adherents;
 
  
 

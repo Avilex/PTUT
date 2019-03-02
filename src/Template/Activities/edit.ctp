@@ -31,7 +31,7 @@ if ($activiteEdit->dateDebut != null) {
 //bouton annuler
 echo $this->Html->link(
     'Annuler',
-    ['controller' => 'Activites',
+    ['controller' => 'Activities',
         'action' => 'affiche'],
     ['class' => 'button',
         'title' => 'Annuler la modification']

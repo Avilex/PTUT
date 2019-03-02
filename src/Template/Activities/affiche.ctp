@@ -3,7 +3,7 @@
 //bouton ajouter une activité
 echo '<br>' . $this->Html->link(
         'Ajouter une activité',
-        ['controller' => 'Activites',
+        ['controller' => 'Activities',
             'action' => 'add'],
         ['class' => 'button',
             'title' => 'Ajouter une activité']
@@ -47,20 +47,20 @@ foreach ($activites as $activite) {
     //bouton supprimer une activité
     echo '<td>' . $this->Html->link(
             'Supprimer',
-            ['controller' => 'Activites',
+            ['controller' => 'Activities',
                 'action' => 'delete', $activite->id],
             ['class' => 'button',
                 'title' => 'suppression activité']) .
         //bouton modifier une activité
         ' ' . $this->Html->link(
             'Modifier',
-            ['controller' => 'Activites',
+            ['controller' => 'Activities',
                 'action' => 'edit', $activite->id],
             ['class' => 'button',
                 'title' => 'modifier l\'activite'])
         . ' ' . $this->Html->link(
             'Inscrire Adherents',
-            ['action' => 'inscrireAdherents', $activite->id, $activite->id],
+            ['action' => 'viewAdherents', $activite->id],
             ['class' => 'button',
                 'title' => 'modifier l\'activite']) . '</td>
   </tr>';

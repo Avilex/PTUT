@@ -16,7 +16,7 @@
     <?php //Lien pour Moniteurs
     echo '<br>' . $this->Html->link(
             'Moniteurs',
-            ['controller' => 'Activites', 'action' => 'affiche'],
+            ['controller' => 'Activities', 'action' => 'affiche'],
             ['class' => 'button', 'title' => 'Vue moniteurs']
         );
 
