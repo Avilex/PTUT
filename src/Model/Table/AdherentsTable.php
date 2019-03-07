@@ -12,7 +12,6 @@ namespace App\Model\Table;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 use Cake\Localized\Validation\FrValidation;
-use Cake\ORM\Rule\IsUnique;
 use Cake\ORM\RulesChecker;
 
 class AdherentsTable extends Table
@@ -26,7 +25,7 @@ class AdherentsTable extends Table
         ]);
         $this->belongsToMany('Activities',
             ['foreignKey' => 'activity_id',
-                'targetForeignKey' => 'adherent_id'
+                'targetForeignKey' => 'adherent_id',
             ]);
     }
 

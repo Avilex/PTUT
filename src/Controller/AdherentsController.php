@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-
 class AdherentsController extends AppController
 {
     //ajouter un adhérent
@@ -123,4 +122,6 @@ class AdherentsController extends AppController
             ->where(['id' => ($getid->id)]);
         $this->set(compact('adh', 'nameFact'));
     }
+
+
 }
