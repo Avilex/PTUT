@@ -21,6 +21,7 @@ class EstablishmentsTable extends Table
     {
         parent::initialize($config);
         $this->hasMany('Adherents');
+
     }
 
     public function validationDefault(Validator $validator)

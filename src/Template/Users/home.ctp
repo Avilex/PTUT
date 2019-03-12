@@ -8,7 +8,7 @@
 
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "HOME";
+    echo '<br>' . "ACCUEIL";
     ?>
 </p>
 

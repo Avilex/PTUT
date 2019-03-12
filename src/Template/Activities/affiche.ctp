@@ -1,6 +1,5 @@
 <?php
 
-
 //bouton ajouter une activité
 echo '<br>' . $this->Html->link(
         'Ajouter une activité',
@@ -27,6 +26,7 @@ echo '<table style="width:100%">
     <th>Nombre participants activité</th>
     <th>Options</th>
   </tr>';
+
 foreach ($activites as $activite) {
     echo '
   <tr>
@@ -43,7 +43,8 @@ foreach ($activites as $activite) {
     }
     echo '<td>' . $activite->prix . '€' . '</td>';
     echo '<td>' . $activite->divers . '</td>';
-    echo '<td>'.$linkActAdh->countAdherent($activite->id).'</td>';
+    echo '<td>' . $link->countAdherent($activite->id) . '</td>';
+
     //bouton supprimer une activité
     echo '<td>' . $this->Html->link(
             'Supprimer',
@@ -57,12 +58,18 @@ foreach ($activites as $activite) {
             ['controller' => 'Activities',
                 'action' => 'edit', $activite->id],
             ['class' => 'button',
-                'title' => 'modifier l\'activite'])
+                'title' => 'modifier l\'activité'])
         . ' ' . $this->Html->link(
             'Inscrire Adherents',
             ['action' => 'viewAdherents', $activite->id],
             ['class' => 'button',
-                'title' => 'modifier l\'activite']) . '</td>
+                'title' => 'inscrire des adhérents à l\'activité'])
+        . ' ' . $this->Html->link(
+            'Participants activité',
+            ['controller' => 'Activities',
+                'action' => 'afficheParticipation', $activite->id],
+            ['class' => 'button',
+                'title' => 'afficher les participants à l\'activité']) . '</td>
   </tr>';
 }
 echo '</table>';

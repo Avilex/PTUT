@@ -10,8 +10,34 @@ namespace App\Controller;
 
 class ActivitiesAdherentsController extends AppController
 {
-        public function countAdherent($idAct = null){
-            $cpt =  $this->ActivitiesAdherents->find('count',array('conditions' => array('activity_id =' => $idAct )));
-            return $cpt;
+    public function countAdherent($idAct = null)
+    {
+        $cpt = $this->ActivitiesAdherents->find()
+            ->where(['activity_id' => $idAct])
+            ->count();
+        return $cpt;
+    }
+
+    public function affiche($idAct = null)
+    {
+        $id = $this->ActivitiesAdherents->find()
+            ->where(['activity_id' => $idAct])
+            ->toArray();
+        return $id;
+    }
+
+    //suppression d'une activité
+    public function delete($id = null, $link = null)
+    {
+        $getId = $this->ActivitiesAdherents->get($id);
+        if ($this->ActivitiesAdherents->delete($getId)) {
+            $this->Flash->success("L'adhérent a été retiré de la liste avec sucès !");
+            return $this->redirect(['controller' => 'Activities',
+                'action' => 'afficheParticipation', $link]);
+        } else {
+            $this->Flash->error("Une erreur est survenue lors de la suppression !");
         }
+    }
+
+
 }
