@@ -44,6 +44,7 @@ foreach ($activites as $activite) {
     echo '<td>' . $activite->prix . '€' . '</td>';
     echo '<td>' . $activite->divers . '</td>';
     echo '<td>' . $link->countAdherent($activite->id) . '</td>';
+
     //bouton supprimer une activité
     echo '<td>' . $this->Html->link(
             'Supprimer',
@@ -62,7 +63,7 @@ foreach ($activites as $activite) {
             'Inscrire Adherents',
             ['action' => 'viewAdherents', $activite->id],
             ['class' => 'button',
-                'title' => 'modifier l\'activité'])
+                'title' => 'inscrire des adhérents à l\'activité'])
         . ' ' . $this->Html->link(
             'Participants activité',
             ['controller' => 'Activities',

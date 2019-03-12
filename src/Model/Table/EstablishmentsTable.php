@@ -20,6 +20,8 @@ class EstablishmentsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+        $this->hasMany('Adherents');
+
     }
 
     public function validationDefault(Validator $validator)

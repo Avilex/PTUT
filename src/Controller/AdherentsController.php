@@ -7,18 +7,19 @@ class AdherentsController extends AppController
     //ajouter un adhérent
     public function add()
     {
-        $adherent = $this->Adherents->find();
-        if (!empty($this->getRequest()->getData())) {
-            $adherent = $this->Adherents->newEntity($this->getRequest()->getData());
+        $adherent = null;
+        $etablissements = $this->Adherents->Establishments->find('list');
+        if (!empty($this->getRequest()->getData())) { 
+         $adherent->establishment_id = $this->getRequest()->getData('etablissements._ids.0');
             if ($this->Adherents->save($adherent)) {
                 $this->Flash->success('L\'adhérent a été crée');
                 $this->redirect((['action' => 'affiche']));
-
             } else {
                 $this->Flash->error("Impossible d'ajouter l'adhérent");
             }
         }
         $this->set(compact('adherent'));
+        $this->set(compact('etablissements'));
     }
 
     //afficher les adhérents
@@ -122,6 +123,4 @@ class AdherentsController extends AppController
             ->where(['id' => ($getid->id)]);
         $this->set(compact('adh', 'nameFact'));
     }
-
-
 }

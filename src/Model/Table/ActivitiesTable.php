@@ -17,10 +17,14 @@ class ActivitiesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+
+        $this->belongsToMany('Adherents')->setDependent(true);
+
         $this->belongsToMany('Adherents',
             ['foreignKey'=>'adherent_id',
                 'targetForeignKey'=>'activity_id',
             ]);
+
 
     }
 

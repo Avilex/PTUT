@@ -23,6 +23,9 @@ class AdherentsTable extends Table
             'dependent' => true,
             'cascadeCallbacks' => true,
         ]);
+
+        $this->belongsToMany('Activities')->setDependent(true);
+        $this->belongsTo('Establishments');
         $this->belongsToMany('Activities',
             ['foreignKey' => 'activity_id',
                 'targetForeignKey' => 'adherent_id',

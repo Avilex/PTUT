@@ -16,6 +16,5 @@ class ActivitiesAdherentsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
     }
 }

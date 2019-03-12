@@ -88,7 +88,6 @@ class ActivitiesController extends AppController
         $link = new ActivitiesAdherentsController();
         $activites = $this->Activities->find('all');
         $this->set(compact('activites', 'total', 'link'));
-
     }
 
     //modifier des activités
@@ -139,14 +138,23 @@ class ActivitiesController extends AppController
         }
     }
 
+
     public function inscrireAdherents($idAct = null, $idAdh = null)
     {
         $adherents = $this->Activities->Adherents->find();
         $activite = $this->Activities->get($idAct);
         $adherent = $this->Activities->Adherents->get($idAdh);
         $this->Activities->Adherents->link($adherent, [$activite]);
-        $this->set(compact('activite', 'adherents'));
+        $this->set(compact('activite','adherents'));
     }
+
+    public function viewAdherents($idAct = null)
+    {
+        $adherents = $this->Activities->Adherents->find();
+        $activite = $this->Activities->get($idAct);
+        $this->set(compact('activite','adherents'));
+    }
+
 
     public function viewAdherents($idAct = null)
     {
@@ -165,6 +173,5 @@ class ActivitiesController extends AppController
         $this->set(compact('adherents', 'link'));
 
     }
-
 
 }
