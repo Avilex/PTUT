@@ -25,3 +25,11 @@ echo $this->Form->button('Mettre à jour');
 echo $this->Form->end();
 echo '<br>';
 
+//bouton annuler
+echo $this->Html->link(
+    'Annuler',
+    ['controller' => 'Adherents',
+        'action' => 'affiche'],
+    ['class' => 'button',
+        'title' => 'Annuler la modification']
+);

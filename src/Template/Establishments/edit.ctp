@@ -14,7 +14,7 @@ echo $this->Form->control('ville');
 echo $this->Form->control('nomDirecteur');
 echo $this->Form->control('tel');
 echo $this->Form->button('Valider');
-echo ' ' . $this->Html->link(
+echo '<br>' . $this->Html->link(
         'Annuler',
         ['controller' => 'Establishments',
             'action' => 'affiche'],

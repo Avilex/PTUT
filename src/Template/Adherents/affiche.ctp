@@ -20,12 +20,14 @@ echo '<table style="width:100%">
     <th>Téléphone adhérent</th> 
     <th>Mail adhérent</th>
     <th>Date de naissance</th>
+    <th>Etablissement</th>
     <th>Handicap de l\'adhérent</th>
     <th>Licence</th>
     <th>Nom tuteur</th>
     <th>Adresse tuteur</th>
     <th>Téléphone tuteur</th>
     <th>Mail tuteur</th>
+    
   </tr>';
 
 //affichage des adhérents
@@ -37,6 +39,7 @@ foreach ($adherent as $adherents) {
         <td>'. $adherents->tel.'</td>
         <td>'. $adherents->mail.'</td>
         <td>'. $adherents->dateNaissance.'</td>
+        <td>'. $adherents->establishment_id.'</td>
         <td>'. $adherents->handicap.'</td>
         <td>'. $adherents->licence.'</td>
     ';

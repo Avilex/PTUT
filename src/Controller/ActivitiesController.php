@@ -155,14 +155,6 @@ class ActivitiesController extends AppController
         $this->set(compact('activite','adherents'));
     }
 
-
-    public function viewAdherents($idAct = null)
-    {
-        $adherents = $this->Activities->Adherents->find();
-        $activite = $this->Activities->get($idAct);
-        $this->set(compact('activite', 'adherents'));
-    }
-
     //affichage participation aux activités
     public function afficheParticipation($idAct = null)
     {

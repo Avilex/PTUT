@@ -18,11 +18,11 @@ class ActivitiesTable extends Table
     {
         parent::initialize($config);
 
-        $this->belongsToMany('Adherents')->setDependent(true);
-
         $this->belongsToMany('Adherents',
-            ['foreignKey'=>'adherent_id',
-                'targetForeignKey'=>'activity_id',
+            ['foreignKey' => 'adherent_id',
+                'targetForeignKey' => 'activity_id',
+                'dependent' => true,
+                'cascadeCallbacks' => true,
             ]);
 
 
@@ -32,11 +32,11 @@ class ActivitiesTable extends Table
     {
         $validator
             ->requirePresence('nom', 'create');
-            //->requirePresence('duree', 'create')->notEmpty('duree', 'Une durée est nécessaire')
-            //->requirePresence('date', 'create')->notEmpty('date', 'La date est nécessaire')
-            //->requirePresence('jour', 'create')->notEmpty('jour', 'Un jour est nécessaire');
-            //->requirePresence('prix', 'create')->notEmpty('prix', 'Le prix est nécessaire')
-            //->requirePresence('typeSeance', 'create')->notEmpty('typeSeance', 'Le type de séance est nécessaire');
+        //->requirePresence('duree', 'create')->notEmpty('duree', 'Une durée est nécessaire')
+        //->requirePresence('date', 'create')->notEmpty('date', 'La date est nécessaire')
+        //->requirePresence('jour', 'create')->notEmpty('jour', 'Un jour est nécessaire');
+        //->requirePresence('prix', 'create')->notEmpty('prix', 'Le prix est nécessaire')
+        //->requirePresence('typeSeance', 'create')->notEmpty('typeSeance', 'Le type de séance est nécessaire');
         return $validator;
     }
 

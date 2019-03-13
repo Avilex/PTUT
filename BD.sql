@@ -16,6 +16,17 @@ Create table if not exists users(
     primary key(id)
 );
 
+Create table if not exists establishments(
+	id int auto_increment,
+    nom varchar(255),
+    adresse varchar(255),
+    codePostal varchar(255),
+	ville varchar(255),
+    nomDirecteur varchar(255),
+    tel varchar(255),
+    primary key(id)
+);
+
 Create table if not exists adherents(
 	id int auto_increment,
     nom varchar(255),
@@ -29,7 +40,9 @@ Create table if not exists adherents(
     adresseTuteur varchar(255),
     telTuteur varchar(255),
     mailTuteur varchar(255),
-    primary key(id)
+    establishment_id int,
+    primary key(id),
+    FOREIGN KEY (establishment_id) REFERENCES establishments(id)
 );
 
 Create table if not exists activities(
@@ -42,6 +55,8 @@ Create table if not exists activities(
     jour varchar(255),
     prix double,
     typeSeance varchar(50),
+    lieu varchar(250),
+    centre varchar(25),
     divers text,
     primary key(id)
 );
@@ -53,17 +68,6 @@ Create table if not exists activities_adherents(
     primary key(id),
     KEY adherent_id (adherent_id),
     KEY activity_id (activity_id)
-);
-
-Create table if not exists establishments(
-	id int auto_increment,
-    nom varchar(255),
-    adresse varchar(255),
-    codePostal varchar(255),
-	ville varchar(255),
-    nomDirecteur varchar(255),
-    tel varchar(255),
-    primary key(id)
 );
 
 Create table if not exists invoices(
