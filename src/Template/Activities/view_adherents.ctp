@@ -1,6 +1,15 @@
 <?php
 //affichage des adhérents
 // echo $this->Form->control('adherents._ids',['option' => $adherents]); ça marche
+?>
+
+    <p style="text-align: center;">
+        <?php
+        echo '<h4 align="center">' . "Inscriptions à l'activité " . '</h4>';
+        ?>
+    </p>
+
+<?php
 echo '<table style="width:100%">
   <tr>
     <th>Nom</th>

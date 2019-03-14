@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "Ajouter un nouvel adhérent";
+    echo '<h4 align="center">'."Ajouter un nouvel adhérent".'</h4>';
     ?>
 </p>
 

@@ -11,7 +11,7 @@ echo '<br>' . $this->Html->link(
 ?>
     <p style="text-align: center;">
         <?php
-        echo '<br>' . "Liste des activités";
+        echo '<h4 align="center">'."Liste des activités".'</h4>';
         ?>
     </p>
 <?php

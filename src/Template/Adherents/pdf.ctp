@@ -5,10 +5,10 @@ use Spipu\Html2Pdf\Exception\Html2PdfException;
 use Spipu\Html2Pdf\Exception\ExceptionFormatter;
 
 ?>
-    <div>
-        <h2><?php echo "ALOAS" ?></h2>
-        <h4 class="test"><?php echo "27 Route de Lent" . '<br>' . "01960 PERRONAS" ?></h4>
-    </div>
+<div>
+    <h2><?php echo "ALOAS" ?></h2>
+    <h4 class="test"><?php echo "27 Route de Lent" . '<br>' . "01960 PERRONAS" ?></h4>
+</div>
 <?php
 
 foreach ($adh as $adherent) {
@@ -16,7 +16,7 @@ foreach ($adh as $adherent) {
         if ($fact->nom == $nameFact) {
             ?>
             <div>
-                <h2 text-align="right"><?php echo $fact->nom; ?> </h2>
+                <h2 text-align="right"> <?php echo $fact->nom; ?> </h2>
             </div>
             <?php
         }
@@ -29,16 +29,17 @@ foreach ($adh as $adherent) {
             "Licence n° " . $adherent->licence; ?></h4>
     <?php
 }
-
 ?>
-    <table border="1px">
-        <tr>
-            <th>Nom Activité</th>
-            <th>Nombre de participations</th>
-            <th>Prix unitaire HT</th>
-            <th>Prix total HT</th>
-        </tr>
-    </table>
+<table border="1px">
+    <tr>
+        <th>Nom Activité</th>
+        <th>Nombre de participations</th>
+        <th>Prix unitaire HT</th>
+        <th>Prix total HT</th>
+    </tr>
+</table>
+
+
 <?php
 //Ecrire dans le pdf
 $content = ob_get_clean();
@@ -53,3 +54,4 @@ try {
     $formatter = new ExceptionFormatter($e);
     echo $formatter->getHtmlMessage();
 }
+?>

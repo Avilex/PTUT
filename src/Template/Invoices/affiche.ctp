@@ -7,7 +7,7 @@ echo '<br>' . $this->Html->link('Ajouter une Facture',
 
     <p style="text-align: center;">
         <?php
-        echo '<br>' . "Liste des factures";
+        echo '<h4 align="center">'."Liste des factures".'</h4>';
         ?>
     </p>
 

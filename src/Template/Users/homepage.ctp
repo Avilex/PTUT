@@ -9,7 +9,7 @@
 
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "PAGE D'ACCUEIL";
+    echo '<br>'.'<h2 align="center">'."PAGE D'ACCUEIL".'</h2>' ;
 
     ?>
 </p>

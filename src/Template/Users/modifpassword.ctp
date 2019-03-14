@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "Modification du mot de passe";
+    echo '<h4 align="center">'."Modification du mot de passe".'</h4>';
     ?>
 </p>
 

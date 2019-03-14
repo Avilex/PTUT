@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "Liste des participants";
+    echo '<h4 align="center">'."Liste des participants".'</h4>';
     ?>
 </p>
 <?php

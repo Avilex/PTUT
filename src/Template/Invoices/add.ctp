@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "Ajouter une facture";
+    echo '<h4 align="center">'."Ajouter une facture".'</h4>';
     ?>
 </p>
 

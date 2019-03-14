@@ -9,7 +9,7 @@ echo '<br>' . $this->Html->link(
 ?>
     <p style="text-align: center;">
         <?php
-        echo '<br>' . "Liste des établissements";
+        echo '<h4 align="center">'."Liste des établissements".'</h4>';
         ?>
     </p>
 

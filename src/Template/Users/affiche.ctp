@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <?php
-    echo '<br>' . "Mon compte";
+    echo '<h4 align="center">'."Mon compte".'</h4>';
     ?>
 </p>
 <?php
